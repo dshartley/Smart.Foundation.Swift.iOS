@@ -1,0 +1,1666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6374C8CA21E6412600530045 /* ModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8C821E6412600530045 /* ModelProperties.swift */; };
+		6374C8CB21E6412600530045 /* GameModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8C921E6412600530045 /* GameModelManager.swift */; };
+		6374C8CD21E6417D00530045 /* SFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374C8CE21E6417D00530045 /* SFCore.framework */; };
+		6374C8CF21E6418300530045 /* SFSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374C8D021E6418300530045 /* SFSerialization.framework */; };
+		6374C8D121E6418800530045 /* SFModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374C8D221E6418800530045 /* SFModel.framework */; };
+		6374C8FA21E6431E00530045 /* PlaySpaceTypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8E221E6431E00530045 /* PlaySpaceTypeWrapper.swift */; };
+		6374C8FB21E6431E00530045 /* ProtocolPlaySpaceTypeModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8E521E6431E00530045 /* ProtocolPlaySpaceTypeModelAccessStrategy.swift */; };
+		6374C8FC21E6431E00530045 /* PlaySpaceTypeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8E621E6431E00530045 /* PlaySpaceTypeCollection.swift */; };
+		6374C8FD21E6431E00530045 /* PlaySpaceTypeModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8E721E6431E00530045 /* PlaySpaceTypeModelAdministrator.swift */; };
+		6374C8FE21E6431E00530045 /* PlaySpaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8E821E6431E00530045 /* PlaySpaceType.swift */; };
+		6374C8FF21E6431E00530045 /* PlaySpaceDataModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8EA21E6431E00530045 /* PlaySpaceDataModelAdministrator.swift */; };
+		6374C90021E6431E00530045 /* ProtocolPlaySpaceDataModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8ED21E6431E00530045 /* ProtocolPlaySpaceDataModelAccessStrategy.swift */; };
+		6374C90121E6431E00530045 /* PlaySpaceDataAttributeDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8EE21E6431E00530045 /* PlaySpaceDataAttributeDataWrapper.swift */; };
+		6374C90221E6431E00530045 /* PlaySpaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8EF21E6431E00530045 /* PlaySpaceData.swift */; };
+		6374C90321E6431E00530045 /* PlaySpaceDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F021E6431E00530045 /* PlaySpaceDataWrapper.swift */; };
+		6374C90421E6431E00530045 /* PlaySpaceDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F121E6431E00530045 /* PlaySpaceDataCollection.swift */; };
+		6374C90521E6431E00530045 /* PlaySpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F321E6431E00530045 /* PlaySpace.swift */; };
+		6374C90621E6431E00530045 /* PlaySpaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F421E6431E00530045 /* PlaySpaceWrapper.swift */; };
+		6374C90721E6431E00530045 /* PlaySpaceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F521E6431E00530045 /* PlaySpaceCollection.swift */; };
+		6374C90821E6431E00530045 /* PlaySpaceModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F621E6431E00530045 /* PlaySpaceModelAdministrator.swift */; };
+		6374C90921E6431E00530045 /* ProtocolPlaySpaceModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C8F921E6431E00530045 /* ProtocolPlaySpaceModelAccessStrategy.swift */; };
+		6374C97121EA121B00530045 /* PlayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97021EA121B00530045 /* PlayWrapper.swift */; };
+		6374C97A21EA1B1600530045 /* PlayDataModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97321EA1B1600530045 /* PlayDataModelAdministrator.swift */; };
+		6374C97B21EA1B1600530045 /* PlayDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97421EA1B1600530045 /* PlayDataWrapper.swift */; };
+		6374C97C21EA1B1600530045 /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97521EA1B1600530045 /* PlayData.swift */; };
+		6374C97D21EA1B1600530045 /* ProtocolPlayDataModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97821EA1B1600530045 /* ProtocolPlayDataModelAccessStrategy.swift */; };
+		6374C97E21EA1B1600530045 /* PlayDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C97921EA1B1600530045 /* PlayDataCollection.swift */; };
+		6374C98921EA1BBA00530045 /* PlayExperienceOnCompleteDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98021EA1BBA00530045 /* PlayExperienceOnCompleteDataWrapper.swift */; };
+		6374C98A21EA1BBA00530045 /* PlayExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98121EA1BBA00530045 /* PlayExperience.swift */; };
+		6374C98B21EA1BBA00530045 /* PlayExperienceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98221EA1BBA00530045 /* PlayExperienceCollection.swift */; };
+		6374C98C21EA1BBA00530045 /* ProtocolPlayExperienceModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98521EA1BBA00530045 /* ProtocolPlayExperienceModelAccessStrategy.swift */; };
+		6374C98D21EA1BBA00530045 /* PlayExperienceModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98621EA1BBA00530045 /* PlayExperienceModelAdministrator.swift */; };
+		6374C98E21EA1BBA00530045 /* PlayExperienceResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98721EA1BBA00530045 /* PlayExperienceResultWrapper.swift */; };
+		6374C98F21EA1BBA00530045 /* PlayExperienceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C98821EA1BBA00530045 /* PlayExperienceWrapper.swift */; };
+		6374C99B21EA1CFA00530045 /* PlayExperienceStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99121EA1CFA00530045 /* PlayExperienceStep.swift */; };
+		6374C99C21EA1CFA00530045 /* PlayExperienceStepContentDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99221EA1CFA00530045 /* PlayExperienceStepContentDataWrapper.swift */; };
+		6374C99D21EA1CFA00530045 /* PlayExperienceStepWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99321EA1CFA00530045 /* PlayExperienceStepWrapper.swift */; };
+		6374C99E21EA1CFA00530045 /* PlayExperienceStepModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99421EA1CFA00530045 /* PlayExperienceStepModelAdministrator.swift */; };
+		6374C99F21EA1CFA00530045 /* PlayExperienceStepCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99521EA1CFA00530045 /* PlayExperienceStepCollection.swift */; };
+		6374C9A021EA1CFA00530045 /* ProtocolPlayExperienceStepModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99821EA1CFA00530045 /* ProtocolPlayExperienceStepModelAccessStrategy.swift */; };
+		6374C9A121EA1CFA00530045 /* PlayExperienceStepResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99921EA1CFA00530045 /* PlayExperienceStepResultWrapper.swift */; };
+		6374C9A221EA1CFA00530045 /* PlayExperienceStepOnCompleteDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C99A21EA1CFA00530045 /* PlayExperienceStepOnCompleteDataWrapper.swift */; };
+		6374C9AC21EA1D8E00530045 /* PlayMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9A421EA1D8E00530045 /* PlayMove.swift */; };
+		6374C9AD21EA1D8E00530045 /* PlayMoveOnCompleteDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9A521EA1D8E00530045 /* PlayMoveOnCompleteDataWrapper.swift */; };
+		6374C9AE21EA1D8E00530045 /* ProtocolPlayMoveModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9A821EA1D8E00530045 /* ProtocolPlayMoveModelAccessStrategy.swift */; };
+		6374C9AF21EA1D8E00530045 /* PlayMoveWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9A921EA1D8E00530045 /* PlayMoveWrapper.swift */; };
+		6374C9B021EA1D8E00530045 /* PlayMoveCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9AA21EA1D8E00530045 /* PlayMoveCollection.swift */; };
+		6374C9B121EA1D8E00530045 /* PlayMoveModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9AB21EA1D8E00530045 /* PlayMoveModelAdministrator.swift */; };
+		6374C9BA21EA257400530045 /* ProtocolPlayResultModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B521EA257400530045 /* ProtocolPlayResultModelAccessStrategy.swift */; };
+		6374C9BB21EA257400530045 /* PlayResultModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B621EA257400530045 /* PlayResultModelAdministrator.swift */; };
+		6374C9BC21EA257400530045 /* PlayResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B721EA257400530045 /* PlayResultWrapper.swift */; };
+		6374C9BD21EA257400530045 /* PlayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B821EA257400530045 /* PlayResult.swift */; };
+		6374C9BE21EA257400530045 /* PlayResultCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B921EA257400530045 /* PlayResultCollection.swift */; };
+		6374C9C821EA25F200530045 /* PlaySpaceBitDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C021EA25F200530045 /* PlaySpaceBitDataWrapper.swift */; };
+		6374C9C921EA25F200530045 /* ProtocolPlaySpaceBitDataModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C321EA25F200530045 /* ProtocolPlaySpaceBitDataModelAccessStrategy.swift */; };
+		6374C9CA21EA25F200530045 /* PlaySpaceBitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C421EA25F200530045 /* PlaySpaceBitData.swift */; };
+		6374C9CB21EA25F200530045 /* PlaySpaceBitDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C521EA25F200530045 /* PlaySpaceBitDataCollection.swift */; };
+		6374C9CC21EA25F200530045 /* PlaySpaceBitDataAttributeDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C621EA25F200530045 /* PlaySpaceBitDataAttributeDataWrapper.swift */; };
+		6374C9CD21EA25F200530045 /* PlaySpaceBitDataModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C721EA25F200530045 /* PlaySpaceBitDataModelAdministrator.swift */; };
+		6374C9D621EA265700530045 /* PlaySpaceBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9CF21EA265700530045 /* PlaySpaceBit.swift */; };
+		6374C9D721EA265700530045 /* PlaySpaceBitWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D021EA265700530045 /* PlaySpaceBitWrapper.swift */; };
+		6374C9D821EA265700530045 /* ProtocolPlaySpaceBitModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D321EA265700530045 /* ProtocolPlaySpaceBitModelAccessStrategy.swift */; };
+		6374C9D921EA265700530045 /* PlaySpaceBitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D421EA265700530045 /* PlaySpaceBitCollection.swift */; };
+		6374C9DA21EA265700530045 /* PlaySpaceBitModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D521EA265700530045 /* PlaySpaceBitModelAdministrator.swift */; };
+		6374C9E321EA26CB00530045 /* PlaySpaceBitTypeModelAdministrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9DC21EA26CB00530045 /* PlaySpaceBitTypeModelAdministrator.swift */; };
+		6374C9E421EA26CB00530045 /* ProtocolPlaySpaceBitTypeModelAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9DF21EA26CB00530045 /* ProtocolPlaySpaceBitTypeModelAccessStrategy.swift */; };
+		6374C9E521EA26CB00530045 /* PlaySpaceBitTypeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9E021EA26CB00530045 /* PlaySpaceBitTypeCollection.swift */; };
+		6374C9E621EA26CB00530045 /* PlaySpaceBitTypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9E121EA26CB00530045 /* PlaySpaceBitTypeWrapper.swift */; };
+		6374C9E721EA26CB00530045 /* PlaySpaceBitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9E221EA26CB00530045 /* PlaySpaceBitType.swift */; };
+		6374C9EA21EA281900530045 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9E921EA281900530045 /* Enums.swift */; };
+		6374CA4721EA2A3B00530045 /* ProtocolPlaySpaceViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9F021EA2A3B00530045 /* ProtocolPlaySpaceViewViewAccessStrategy.swift */; };
+		6374CA4821EA2A3B00530045 /* PlaySpaceViewViewManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9F121EA2A3B00530045 /* PlaySpaceViewViewManagerBase.swift */; };
+		6374CA4921EA2A3B00530045 /* ProtocolPlaySpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9F321EA2A3B00530045 /* ProtocolPlaySpaceView.swift */; };
+		6374CA5221EA2A3B00530045 /* ProtocolPlaySpaceBitViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA0721EA2A3B00530045 /* ProtocolPlaySpaceBitViewViewAccessStrategy.swift */; };
+		6374CA5321EA2A3B00530045 /* PlaySpaceBitViewViewManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA0821EA2A3B00530045 /* PlaySpaceBitViewViewManagerBase.swift */; };
+		6374CA5421EA2A3B00530045 /* ProtocolPlaySpaceBitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA0A21EA2A3B00530045 /* ProtocolPlaySpaceBitView.swift */; };
+		6374CA5521EA2A3B00530045 /* ProtocolPlaySpaceMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA0D21EA2A3B00530045 /* ProtocolPlaySpaceMarkerView.swift */; };
+		6374CA5621EA2A3B00530045 /* PlayExperienceStepMarkerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1021EA2A3B00530045 /* PlayExperienceStepMarkerViewViewAccessStrategy.swift */; };
+		6374CA5721EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1221EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift */; };
+		6374CA5821EA2A3B00530045 /* PlayExperienceStepMarkerViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1321EA2A3B00530045 /* PlayExperienceStepMarkerViewViewManager.swift */; };
+		6374CA5921EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1521EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerView.swift */; };
+		6374CA5A21EA2A3B00530045 /* PlayExperienceStepViewViewManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1721EA2A3B00530045 /* PlayExperienceStepViewViewManagerBase.swift */; };
+		6374CA5B21EA2A3B00530045 /* ProtocolPlayExperienceStepViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1A21EA2A3B00530045 /* ProtocolPlayExperienceStepViewViewAccessStrategy.swift */; };
+		6374CA5C21EA2A3B00530045 /* BasicPlayExperienceStepViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1D21EA2A3B00530045 /* BasicPlayExperienceStepViewViewAccessStrategy.swift */; };
+		6374CA5D21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA1F21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift */; };
+		6374CA5E21EA2A3B00530045 /* BasicPlayExperienceStepViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2021EA2A3B00530045 /* BasicPlayExperienceStepViewViewManager.swift */; };
+		6374CA5F21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2221EA2A3B00530045 /* ProtocolBasicPlayExperienceStepView.swift */; };
+		6374CA6021EA2A3B00530045 /* ProtocolPlayExperienceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2421EA2A3B00530045 /* ProtocolPlayExperienceStepView.swift */; };
+		6374CA6121EA2A3B00530045 /* ProtocolPlayExperienceStepViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2521EA2A3B00530045 /* ProtocolPlayExperienceStepViewDelegate.swift */; };
+		6374CA6221EA2A3B00530045 /* PlayAreaViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2821EA2A3B00530045 /* PlayAreaViewViewAccessStrategy.swift */; };
+		6374CA6321EA2A3B00530045 /* ProtocolPlayAreaViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2A21EA2A3B00530045 /* ProtocolPlayAreaViewViewAccessStrategy.swift */; };
+		6374CA6421EA2A3B00530045 /* PlayAreaViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2B21EA2A3B00530045 /* PlayAreaViewViewManager.swift */; };
+		6374CA6521EA2A3B00530045 /* ProtocolPlayAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2D21EA2A3B00530045 /* ProtocolPlayAreaView.swift */; };
+		6374CA6621EA2A3B00530045 /* ProtocolPlayExperienceViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3121EA2A3B00530045 /* ProtocolPlayExperienceViewViewAccessStrategy.swift */; };
+		6374CA6721EA2A3B00530045 /* PlayExperienceViewViewManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3221EA2A3B00530045 /* PlayExperienceViewViewManagerBase.swift */; };
+		6374CA6821EA2A3B00530045 /* BasicPlayExperienceViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3421EA2A3B00530045 /* BasicPlayExperienceViewViewManager.swift */; };
+		6374CA6921EA2A3B00530045 /* BasicPlayExperienceViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3621EA2A3B00530045 /* BasicPlayExperienceViewViewAccessStrategy.swift */; };
+		6374CA6A21EA2A3B00530045 /* ProtocolBasicPlayExperienceViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3821EA2A3B00530045 /* ProtocolBasicPlayExperienceViewViewAccessStrategy.swift */; };
+		6374CA6B21EA2A3B00530045 /* ProtocolBasicPlayExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3A21EA2A3B00530045 /* ProtocolBasicPlayExperienceView.swift */; };
+		6374CA6C21EA2A3B00530045 /* ProtocolPlayExperienceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3C21EA2A3B00530045 /* ProtocolPlayExperienceViewDelegate.swift */; };
+		6374CA6D21EA2A3B00530045 /* ProtocolPlayExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3D21EA2A3B00530045 /* ProtocolPlayExperienceView.swift */; };
+		6374CA6E21EA2A3B00530045 /* ProtocolPlayExperienceContainerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA3E21EA2A3B00530045 /* ProtocolPlayExperienceContainerViewDelegate.swift */; };
+		6374CA6F21EA2A3B00530045 /* PlaySpaceContainerViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA4021EA2A3B00530045 /* PlaySpaceContainerViewViewManager.swift */; };
+		6374CA7021EA2A3B00530045 /* PlaySpaceContainerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA4221EA2A3B00530045 /* PlaySpaceContainerViewViewAccessStrategy.swift */; };
+		6374CA7121EA2A3B00530045 /* ProtocolPlaySpaceContainerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA4421EA2A3B00530045 /* ProtocolPlaySpaceContainerViewViewAccessStrategy.swift */; };
+		6374CA7221EA2A3B00530045 /* ProtocolPlaySpaceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA4621EA2A3B00530045 /* ProtocolPlaySpaceContainerView.swift */; };
+		6374CA9B21EA3FC200530045 /* PlaySpaceViewControlManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA7721EA3FC200530045 /* PlaySpaceViewControlManagerBase.swift */; };
+		6374CA9C21EA3FC200530045 /* ProtocolPlaySpaceViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA7921EA3FC200530045 /* ProtocolPlaySpaceViewControlManagerDelegate.swift */; };
+		6374CA9D21EA3FC200530045 /* PlaySpaceBitViewControlManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA7B21EA3FC200530045 /* PlaySpaceBitViewControlManagerBase.swift */; };
+		6374CA9E21EA3FC200530045 /* ProtocolPlaySpaceBitViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA7D21EA3FC200530045 /* ProtocolPlaySpaceBitViewControlManagerDelegate.swift */; };
+		6374CA9F21EA3FC200530045 /* PlayExperienceStepMarkerViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8021EA3FC200530045 /* PlayExperienceStepMarkerViewControlManager.swift */; };
+		6374CAA021EA3FC200530045 /* ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8221EA3FC200530045 /* ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift */; };
+		6374CAA121EA3FC200530045 /* PlayExperienceStepViewControlManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8421EA3FC200530045 /* PlayExperienceStepViewControlManagerBase.swift */; };
+		6374CAA221EA3FC200530045 /* BasicPlayExperienceStepViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8621EA3FC200530045 /* BasicPlayExperienceStepViewControlManager.swift */; };
+		6374CAA321EA3FC200530045 /* ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8821EA3FC200530045 /* ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift */; };
+		6374CAA421EA3FC200530045 /* ProtocolPlayExperienceStepViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8A21EA3FC200530045 /* ProtocolPlayExperienceStepViewControlManagerDelegate.swift */; };
+		6374CAA521EA3FC200530045 /* PlayAreaViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8C21EA3FC200530045 /* PlayAreaViewControlManager.swift */; };
+		6374CAA621EA3FC200530045 /* ProtocolPlayAreaViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA8E21EA3FC200530045 /* ProtocolPlayAreaViewControlManagerDelegate.swift */; };
+		6374CAA721EA3FC200530045 /* BasicPlayExperienceViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9121EA3FC200530045 /* BasicPlayExperienceViewControlManager.swift */; };
+		6374CAA821EA3FC200530045 /* ProtocolBasicPlayExperienceViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9321EA3FC200530045 /* ProtocolBasicPlayExperienceViewControlManagerDelegate.swift */; };
+		6374CAA921EA3FC200530045 /* ProtocolPlayExperienceViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9521EA3FC200530045 /* ProtocolPlayExperienceViewControlManagerDelegate.swift */; };
+		6374CAAA21EA3FC200530045 /* PlayExperienceViewControlManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9621EA3FC200530045 /* PlayExperienceViewControlManagerBase.swift */; };
+		6374CAAB21EA3FC200530045 /* PlaySpaceContainerViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9821EA3FC200530045 /* PlaySpaceContainerViewControlManager.swift */; };
+		6374CAAC21EA3FC200530045 /* ProtocolPlaySpaceContainerViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA9A21EA3FC200530045 /* ProtocolPlaySpaceContainerViewControlManagerDelegate.swift */; };
+		6374CAAD21EA407600530045 /* SFController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374CAAE21EA407600530045 /* SFController.framework */; };
+		6374CAB221EA41B800530045 /* ExtensionControlManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CAB121EA41B800530045 /* ExtensionControlManagerBase.swift */; };
+		6374CAB321EA560900530045 /* SFSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374CAB421EA560900530045 /* SFSocial.framework */; };
+		6374CABE21EA5B9A00530045 /* ProtocolPlaySpaceMarkerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CABD21EA5B9A00530045 /* ProtocolPlaySpaceMarkerViewDelegate.swift */; };
+		6374CAC321EA5D6C00530045 /* ProtocolPlaySpaceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CAC221EA5D6C00530045 /* ProtocolPlaySpaceViewDelegate.swift */; };
+		6374CAC521EA5D7C00530045 /* ProtocolPlaySpaceBitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CAC421EA5D7C00530045 /* ProtocolPlaySpaceBitViewDelegate.swift */; };
+		6374CAC721EA5D9F00530045 /* ProtocolPlayExperienceStepMarkerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CAC621EA5D9F00530045 /* ProtocolPlayExperienceStepMarkerViewDelegate.swift */; };
+		63AA5B891EF45E38008200B8 /* SFGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AA5B871EF45E38008200B8 /* SFGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6374C8C821E6412600530045 /* ModelProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProperties.swift; sourceTree = "<group>"; };
+		6374C8C921E6412600530045 /* GameModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModelManager.swift; sourceTree = "<group>"; };
+		6374C8CE21E6417D00530045 /* SFCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6374C8D021E6418300530045 /* SFSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6374C8D221E6418800530045 /* SFModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6374C8E221E6431E00530045 /* PlaySpaceTypeWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceTypeWrapper.swift; sourceTree = "<group>"; };
+		6374C8E521E6431E00530045 /* ProtocolPlaySpaceTypeModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceTypeModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C8E621E6431E00530045 /* PlaySpaceTypeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceTypeCollection.swift; sourceTree = "<group>"; };
+		6374C8E721E6431E00530045 /* PlaySpaceTypeModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceTypeModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C8E821E6431E00530045 /* PlaySpaceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceType.swift; sourceTree = "<group>"; };
+		6374C8EA21E6431E00530045 /* PlaySpaceDataModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceDataModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C8ED21E6431E00530045 /* ProtocolPlaySpaceDataModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceDataModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C8EE21E6431E00530045 /* PlaySpaceDataAttributeDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceDataAttributeDataWrapper.swift; sourceTree = "<group>"; };
+		6374C8EF21E6431E00530045 /* PlaySpaceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceData.swift; sourceTree = "<group>"; };
+		6374C8F021E6431E00530045 /* PlaySpaceDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceDataWrapper.swift; sourceTree = "<group>"; };
+		6374C8F121E6431E00530045 /* PlaySpaceDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceDataCollection.swift; sourceTree = "<group>"; };
+		6374C8F321E6431E00530045 /* PlaySpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpace.swift; sourceTree = "<group>"; };
+		6374C8F421E6431E00530045 /* PlaySpaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceWrapper.swift; sourceTree = "<group>"; };
+		6374C8F521E6431E00530045 /* PlaySpaceCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceCollection.swift; sourceTree = "<group>"; };
+		6374C8F621E6431E00530045 /* PlaySpaceModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C8F921E6431E00530045 /* ProtocolPlaySpaceModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C97021EA121B00530045 /* PlayWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayWrapper.swift; sourceTree = "<group>"; };
+		6374C97321EA1B1600530045 /* PlayDataModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayDataModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C97421EA1B1600530045 /* PlayDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayDataWrapper.swift; sourceTree = "<group>"; };
+		6374C97521EA1B1600530045 /* PlayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
+		6374C97821EA1B1600530045 /* ProtocolPlayDataModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayDataModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C97921EA1B1600530045 /* PlayDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayDataCollection.swift; sourceTree = "<group>"; };
+		6374C98021EA1BBA00530045 /* PlayExperienceOnCompleteDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceOnCompleteDataWrapper.swift; sourceTree = "<group>"; };
+		6374C98121EA1BBA00530045 /* PlayExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperience.swift; sourceTree = "<group>"; };
+		6374C98221EA1BBA00530045 /* PlayExperienceCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceCollection.swift; sourceTree = "<group>"; };
+		6374C98521EA1BBA00530045 /* ProtocolPlayExperienceModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C98621EA1BBA00530045 /* PlayExperienceModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C98721EA1BBA00530045 /* PlayExperienceResultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceResultWrapper.swift; sourceTree = "<group>"; };
+		6374C98821EA1BBA00530045 /* PlayExperienceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceWrapper.swift; sourceTree = "<group>"; };
+		6374C99121EA1CFA00530045 /* PlayExperienceStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStep.swift; sourceTree = "<group>"; };
+		6374C99221EA1CFA00530045 /* PlayExperienceStepContentDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepContentDataWrapper.swift; sourceTree = "<group>"; };
+		6374C99321EA1CFA00530045 /* PlayExperienceStepWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepWrapper.swift; sourceTree = "<group>"; };
+		6374C99421EA1CFA00530045 /* PlayExperienceStepModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C99521EA1CFA00530045 /* PlayExperienceStepCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepCollection.swift; sourceTree = "<group>"; };
+		6374C99821EA1CFA00530045 /* ProtocolPlayExperienceStepModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C99921EA1CFA00530045 /* PlayExperienceStepResultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepResultWrapper.swift; sourceTree = "<group>"; };
+		6374C99A21EA1CFA00530045 /* PlayExperienceStepOnCompleteDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepOnCompleteDataWrapper.swift; sourceTree = "<group>"; };
+		6374C9A421EA1D8E00530045 /* PlayMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMove.swift; sourceTree = "<group>"; };
+		6374C9A521EA1D8E00530045 /* PlayMoveOnCompleteDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMoveOnCompleteDataWrapper.swift; sourceTree = "<group>"; };
+		6374C9A821EA1D8E00530045 /* ProtocolPlayMoveModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayMoveModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9A921EA1D8E00530045 /* PlayMoveWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMoveWrapper.swift; sourceTree = "<group>"; };
+		6374C9AA21EA1D8E00530045 /* PlayMoveCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMoveCollection.swift; sourceTree = "<group>"; };
+		6374C9AB21EA1D8E00530045 /* PlayMoveModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMoveModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C9B521EA257400530045 /* ProtocolPlayResultModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayResultModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9B621EA257400530045 /* PlayResultModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayResultModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C9B721EA257400530045 /* PlayResultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayResultWrapper.swift; sourceTree = "<group>"; };
+		6374C9B821EA257400530045 /* PlayResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayResult.swift; sourceTree = "<group>"; };
+		6374C9B921EA257400530045 /* PlayResultCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayResultCollection.swift; sourceTree = "<group>"; };
+		6374C9C021EA25F200530045 /* PlaySpaceBitDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitDataWrapper.swift; sourceTree = "<group>"; };
+		6374C9C321EA25F200530045 /* ProtocolPlaySpaceBitDataModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitDataModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9C421EA25F200530045 /* PlaySpaceBitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitData.swift; sourceTree = "<group>"; };
+		6374C9C521EA25F200530045 /* PlaySpaceBitDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitDataCollection.swift; sourceTree = "<group>"; };
+		6374C9C621EA25F200530045 /* PlaySpaceBitDataAttributeDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitDataAttributeDataWrapper.swift; sourceTree = "<group>"; };
+		6374C9C721EA25F200530045 /* PlaySpaceBitDataModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitDataModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C9CF21EA265700530045 /* PlaySpaceBit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBit.swift; sourceTree = "<group>"; };
+		6374C9D021EA265700530045 /* PlaySpaceBitWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitWrapper.swift; sourceTree = "<group>"; };
+		6374C9D321EA265700530045 /* ProtocolPlaySpaceBitModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9D421EA265700530045 /* PlaySpaceBitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitCollection.swift; sourceTree = "<group>"; };
+		6374C9D521EA265700530045 /* PlaySpaceBitModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C9DC21EA26CB00530045 /* PlaySpaceBitTypeModelAdministrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitTypeModelAdministrator.swift; sourceTree = "<group>"; };
+		6374C9DF21EA26CB00530045 /* ProtocolPlaySpaceBitTypeModelAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitTypeModelAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9E021EA26CB00530045 /* PlaySpaceBitTypeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitTypeCollection.swift; sourceTree = "<group>"; };
+		6374C9E121EA26CB00530045 /* PlaySpaceBitTypeWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitTypeWrapper.swift; sourceTree = "<group>"; };
+		6374C9E221EA26CB00530045 /* PlaySpaceBitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitType.swift; sourceTree = "<group>"; };
+		6374C9E921EA281900530045 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		6374C9F021EA2A3B00530045 /* ProtocolPlaySpaceViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374C9F121EA2A3B00530045 /* PlaySpaceViewViewManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceViewViewManagerBase.swift; sourceTree = "<group>"; };
+		6374C9F321EA2A3B00530045 /* ProtocolPlaySpaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceView.swift; sourceTree = "<group>"; };
+		6374CA0721EA2A3B00530045 /* ProtocolPlaySpaceBitViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA0821EA2A3B00530045 /* PlaySpaceBitViewViewManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitViewViewManagerBase.swift; sourceTree = "<group>"; };
+		6374CA0A21EA2A3B00530045 /* ProtocolPlaySpaceBitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitView.swift; sourceTree = "<group>"; };
+		6374CA0D21EA2A3B00530045 /* ProtocolPlaySpaceMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceMarkerView.swift; sourceTree = "<group>"; };
+		6374CA1021EA2A3B00530045 /* PlayExperienceStepMarkerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepMarkerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA1221EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA1321EA2A3B00530045 /* PlayExperienceStepMarkerViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepMarkerViewViewManager.swift; sourceTree = "<group>"; };
+		6374CA1521EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepMarkerView.swift; sourceTree = "<group>"; };
+		6374CA1721EA2A3B00530045 /* PlayExperienceStepViewViewManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepViewViewManagerBase.swift; sourceTree = "<group>"; };
+		6374CA1A21EA2A3B00530045 /* ProtocolPlayExperienceStepViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA1D21EA2A3B00530045 /* BasicPlayExperienceStepViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceStepViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA1F21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA2021EA2A3B00530045 /* BasicPlayExperienceStepViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceStepViewViewManager.swift; sourceTree = "<group>"; };
+		6374CA2221EA2A3B00530045 /* ProtocolBasicPlayExperienceStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceStepView.swift; sourceTree = "<group>"; };
+		6374CA2421EA2A3B00530045 /* ProtocolPlayExperienceStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepView.swift; sourceTree = "<group>"; };
+		6374CA2521EA2A3B00530045 /* ProtocolPlayExperienceStepViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepViewDelegate.swift; sourceTree = "<group>"; };
+		6374CA2821EA2A3B00530045 /* PlayAreaViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAreaViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA2A21EA2A3B00530045 /* ProtocolPlayAreaViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayAreaViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA2B21EA2A3B00530045 /* PlayAreaViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAreaViewViewManager.swift; sourceTree = "<group>"; };
+		6374CA2D21EA2A3B00530045 /* ProtocolPlayAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayAreaView.swift; sourceTree = "<group>"; };
+		6374CA3121EA2A3B00530045 /* ProtocolPlayExperienceViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA3221EA2A3B00530045 /* PlayExperienceViewViewManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceViewViewManagerBase.swift; sourceTree = "<group>"; };
+		6374CA3421EA2A3B00530045 /* BasicPlayExperienceViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceViewViewManager.swift; sourceTree = "<group>"; };
+		6374CA3621EA2A3B00530045 /* BasicPlayExperienceViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA3821EA2A3B00530045 /* ProtocolBasicPlayExperienceViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA3A21EA2A3B00530045 /* ProtocolBasicPlayExperienceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceView.swift; sourceTree = "<group>"; };
+		6374CA3C21EA2A3B00530045 /* ProtocolPlayExperienceViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceViewDelegate.swift; sourceTree = "<group>"; };
+		6374CA3D21EA2A3B00530045 /* ProtocolPlayExperienceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceView.swift; sourceTree = "<group>"; };
+		6374CA3E21EA2A3B00530045 /* ProtocolPlayExperienceContainerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceContainerViewDelegate.swift; sourceTree = "<group>"; };
+		6374CA4021EA2A3B00530045 /* PlaySpaceContainerViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceContainerViewViewManager.swift; sourceTree = "<group>"; };
+		6374CA4221EA2A3B00530045 /* PlaySpaceContainerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceContainerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA4421EA2A3B00530045 /* ProtocolPlaySpaceContainerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceContainerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		6374CA4621EA2A3B00530045 /* ProtocolPlaySpaceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceContainerView.swift; sourceTree = "<group>"; };
+		6374CA7721EA3FC200530045 /* PlaySpaceViewControlManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceViewControlManagerBase.swift; sourceTree = "<group>"; };
+		6374CA7921EA3FC200530045 /* ProtocolPlaySpaceViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA7B21EA3FC200530045 /* PlaySpaceBitViewControlManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceBitViewControlManagerBase.swift; sourceTree = "<group>"; };
+		6374CA7D21EA3FC200530045 /* ProtocolPlaySpaceBitViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA8021EA3FC200530045 /* PlayExperienceStepMarkerViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepMarkerViewControlManager.swift; sourceTree = "<group>"; };
+		6374CA8221EA3FC200530045 /* ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA8421EA3FC200530045 /* PlayExperienceStepViewControlManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceStepViewControlManagerBase.swift; sourceTree = "<group>"; };
+		6374CA8621EA3FC200530045 /* BasicPlayExperienceStepViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceStepViewControlManager.swift; sourceTree = "<group>"; };
+		6374CA8821EA3FC200530045 /* ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA8A21EA3FC200530045 /* ProtocolPlayExperienceStepViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA8C21EA3FC200530045 /* PlayAreaViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAreaViewControlManager.swift; sourceTree = "<group>"; };
+		6374CA8E21EA3FC200530045 /* ProtocolPlayAreaViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayAreaViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA9121EA3FC200530045 /* BasicPlayExperienceViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlayExperienceViewControlManager.swift; sourceTree = "<group>"; };
+		6374CA9321EA3FC200530045 /* ProtocolBasicPlayExperienceViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolBasicPlayExperienceViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA9521EA3FC200530045 /* ProtocolPlayExperienceViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CA9621EA3FC200530045 /* PlayExperienceViewControlManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayExperienceViewControlManagerBase.swift; sourceTree = "<group>"; };
+		6374CA9821EA3FC200530045 /* PlaySpaceContainerViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySpaceContainerViewControlManager.swift; sourceTree = "<group>"; };
+		6374CA9A21EA3FC200530045 /* ProtocolPlaySpaceContainerViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceContainerViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		6374CAAE21EA407600530045 /* SFController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6374CAB121EA41B800530045 /* ExtensionControlManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionControlManagerBase.swift; sourceTree = "<group>"; };
+		6374CAB421EA560900530045 /* SFSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6374CABD21EA5B9A00530045 /* ProtocolPlaySpaceMarkerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceMarkerViewDelegate.swift; sourceTree = "<group>"; };
+		6374CAC221EA5D6C00530045 /* ProtocolPlaySpaceViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceViewDelegate.swift; sourceTree = "<group>"; };
+		6374CAC421EA5D7C00530045 /* ProtocolPlaySpaceBitViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaySpaceBitViewDelegate.swift; sourceTree = "<group>"; };
+		6374CAC621EA5D9F00530045 /* ProtocolPlayExperienceStepMarkerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayExperienceStepMarkerViewDelegate.swift; sourceTree = "<group>"; };
+		63AA5B841EF45E38008200B8 /* SFGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AA5B871EF45E38008200B8 /* SFGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFGame.h; sourceTree = "<group>"; };
+		63AA5B881EF45E38008200B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63AA5B801EF45E38008200B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6374C8CF21E6418300530045 /* SFSerialization.framework in Frameworks */,
+				6374CAB321EA560900530045 /* SFSocial.framework in Frameworks */,
+				6374CAAD21EA407600530045 /* SFController.framework in Frameworks */,
+				6374C8D121E6418800530045 /* SFModel.framework in Frameworks */,
+				6374C8CD21E6417D00530045 /* SFCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6374C8C521E6400C00530045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6374C97221EA1B1600530045 /* PlayData */,
+				6374C97F21EA1BBA00530045 /* PlayExperiences */,
+				6374C99021EA1CFA00530045 /* PlayExperienceSteps */,
+				6374C9A321EA1D8E00530045 /* PlayMoves */,
+				6374C9B221EA257400530045 /* PlayResults */,
+				6374C9BF21EA25F200530045 /* PlaySpaceBitData */,
+				6374C9CE21EA265700530045 /* PlaySpaceBits */,
+				6374C9DB21EA26CB00530045 /* PlaySpaceBitTypes */,
+				6374C8E121E6431E00530045 /* PlaySpaceTypes */,
+				6374C8F221E6431E00530045 /* PlaySpaces */,
+				6374C8E921E6431E00530045 /* PlaySpaceData */,
+				6374C97021EA121B00530045 /* PlayWrapper.swift */,
+				6374C8C921E6412600530045 /* GameModelManager.swift */,
+				6374C8C821E6412600530045 /* ModelProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6374C8C621E6406A00530045 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAAF21EA41B800530045 /* ControlManagerBase */,
+				6374CA7321EA3FC200530045 /* Displays */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6374C8C721E6407100530045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9EB21EA2A3B00530045 /* GameDisplay */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6374C8CC21E6417D00530045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8CE21E6417D00530045 /* SFCore.framework */,
+				6374CAAE21EA407600530045 /* SFController.framework */,
+				6374CAB421EA560900530045 /* SFSocial.framework */,
+				6374C8D021E6418300530045 /* SFSerialization.framework */,
+				6374C8D221E6418800530045 /* SFModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6374C8E121E6431E00530045 /* PlaySpaceTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8E321E6431E00530045 /* ModelAccessStrategies */,
+				6374C8E821E6431E00530045 /* PlaySpaceType.swift */,
+				6374C8E621E6431E00530045 /* PlaySpaceTypeCollection.swift */,
+				6374C8E721E6431E00530045 /* PlaySpaceTypeModelAdministrator.swift */,
+				6374C8E221E6431E00530045 /* PlaySpaceTypeWrapper.swift */,
+			);
+			path = PlaySpaceTypes;
+			sourceTree = "<group>";
+		};
+		6374C8E321E6431E00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8E421E6431E00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C8E421E6431E00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8E521E6431E00530045 /* ProtocolPlaySpaceTypeModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C8E921E6431E00530045 /* PlaySpaceData */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8EB21E6431E00530045 /* ModelAccessStrategies */,
+				6374C8EF21E6431E00530045 /* PlaySpaceData.swift */,
+				6374C8F121E6431E00530045 /* PlaySpaceDataCollection.swift */,
+				6374C8EA21E6431E00530045 /* PlaySpaceDataModelAdministrator.swift */,
+				6374C8EE21E6431E00530045 /* PlaySpaceDataAttributeDataWrapper.swift */,
+				6374C8F021E6431E00530045 /* PlaySpaceDataWrapper.swift */,
+			);
+			path = PlaySpaceData;
+			sourceTree = "<group>";
+		};
+		6374C8EB21E6431E00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8EC21E6431E00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C8EC21E6431E00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8ED21E6431E00530045 /* ProtocolPlaySpaceDataModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C8F221E6431E00530045 /* PlaySpaces */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8F721E6431E00530045 /* ModelAccessStrategies */,
+				6374C8F321E6431E00530045 /* PlaySpace.swift */,
+				6374C8F521E6431E00530045 /* PlaySpaceCollection.swift */,
+				6374C8F621E6431E00530045 /* PlaySpaceModelAdministrator.swift */,
+				6374C8F421E6431E00530045 /* PlaySpaceWrapper.swift */,
+			);
+			path = PlaySpaces;
+			sourceTree = "<group>";
+		};
+		6374C8F721E6431E00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8F821E6431E00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C8F821E6431E00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C8F921E6431E00530045 /* ProtocolPlaySpaceModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C97221EA1B1600530045 /* PlayData */ = {
+			isa = PBXGroup;
+			children = (
+				6374C97621EA1B1600530045 /* ModelAccessStrategies */,
+				6374C97521EA1B1600530045 /* PlayData.swift */,
+				6374C97921EA1B1600530045 /* PlayDataCollection.swift */,
+				6374C97321EA1B1600530045 /* PlayDataModelAdministrator.swift */,
+				6374C97421EA1B1600530045 /* PlayDataWrapper.swift */,
+			);
+			path = PlayData;
+			sourceTree = "<group>";
+		};
+		6374C97621EA1B1600530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C97721EA1B1600530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C97721EA1B1600530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C97821EA1B1600530045 /* ProtocolPlayDataModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C97F21EA1BBA00530045 /* PlayExperiences */ = {
+			isa = PBXGroup;
+			children = (
+				6374C98321EA1BBA00530045 /* ModelAccessStrategies */,
+				6374C98121EA1BBA00530045 /* PlayExperience.swift */,
+				6374C98221EA1BBA00530045 /* PlayExperienceCollection.swift */,
+				6374C98621EA1BBA00530045 /* PlayExperienceModelAdministrator.swift */,
+				6374C98021EA1BBA00530045 /* PlayExperienceOnCompleteDataWrapper.swift */,
+				6374C98721EA1BBA00530045 /* PlayExperienceResultWrapper.swift */,
+				6374C98821EA1BBA00530045 /* PlayExperienceWrapper.swift */,
+			);
+			path = PlayExperiences;
+			sourceTree = "<group>";
+		};
+		6374C98321EA1BBA00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C98421EA1BBA00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C98421EA1BBA00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C98521EA1BBA00530045 /* ProtocolPlayExperienceModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C99021EA1CFA00530045 /* PlayExperienceSteps */ = {
+			isa = PBXGroup;
+			children = (
+				6374C99621EA1CFA00530045 /* ModelAccessStrategies */,
+				6374C99121EA1CFA00530045 /* PlayExperienceStep.swift */,
+				6374C99521EA1CFA00530045 /* PlayExperienceStepCollection.swift */,
+				6374C99421EA1CFA00530045 /* PlayExperienceStepModelAdministrator.swift */,
+				6374C99221EA1CFA00530045 /* PlayExperienceStepContentDataWrapper.swift */,
+				6374C99321EA1CFA00530045 /* PlayExperienceStepWrapper.swift */,
+				6374C99921EA1CFA00530045 /* PlayExperienceStepResultWrapper.swift */,
+				6374C99A21EA1CFA00530045 /* PlayExperienceStepOnCompleteDataWrapper.swift */,
+			);
+			path = PlayExperienceSteps;
+			sourceTree = "<group>";
+		};
+		6374C99621EA1CFA00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C99721EA1CFA00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C99721EA1CFA00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C99821EA1CFA00530045 /* ProtocolPlayExperienceStepModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9A321EA1D8E00530045 /* PlayMoves */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9A621EA1D8E00530045 /* ModelAccessStrategies */,
+				6374C9A421EA1D8E00530045 /* PlayMove.swift */,
+				6374C9AA21EA1D8E00530045 /* PlayMoveCollection.swift */,
+				6374C9AB21EA1D8E00530045 /* PlayMoveModelAdministrator.swift */,
+				6374C9A521EA1D8E00530045 /* PlayMoveOnCompleteDataWrapper.swift */,
+				6374C9A921EA1D8E00530045 /* PlayMoveWrapper.swift */,
+			);
+			path = PlayMoves;
+			sourceTree = "<group>";
+		};
+		6374C9A621EA1D8E00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9A721EA1D8E00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9A721EA1D8E00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9A821EA1D8E00530045 /* ProtocolPlayMoveModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9B221EA257400530045 /* PlayResults */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9B321EA257400530045 /* ModelAccessStrategies */,
+				6374C9B821EA257400530045 /* PlayResult.swift */,
+				6374C9B921EA257400530045 /* PlayResultCollection.swift */,
+				6374C9B621EA257400530045 /* PlayResultModelAdministrator.swift */,
+				6374C9B721EA257400530045 /* PlayResultWrapper.swift */,
+			);
+			path = PlayResults;
+			sourceTree = "<group>";
+		};
+		6374C9B321EA257400530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9B421EA257400530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9B421EA257400530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9B521EA257400530045 /* ProtocolPlayResultModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9BF21EA25F200530045 /* PlaySpaceBitData */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9C121EA25F200530045 /* ModelAccessStrategies */,
+				6374C9C421EA25F200530045 /* PlaySpaceBitData.swift */,
+				6374C9C521EA25F200530045 /* PlaySpaceBitDataCollection.swift */,
+				6374C9C721EA25F200530045 /* PlaySpaceBitDataModelAdministrator.swift */,
+				6374C9C021EA25F200530045 /* PlaySpaceBitDataWrapper.swift */,
+				6374C9C621EA25F200530045 /* PlaySpaceBitDataAttributeDataWrapper.swift */,
+			);
+			path = PlaySpaceBitData;
+			sourceTree = "<group>";
+		};
+		6374C9C121EA25F200530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9C221EA25F200530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9C221EA25F200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9C321EA25F200530045 /* ProtocolPlaySpaceBitDataModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9CE21EA265700530045 /* PlaySpaceBits */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9D121EA265700530045 /* ModelAccessStrategies */,
+				6374C9CF21EA265700530045 /* PlaySpaceBit.swift */,
+				6374C9D421EA265700530045 /* PlaySpaceBitCollection.swift */,
+				6374C9D521EA265700530045 /* PlaySpaceBitModelAdministrator.swift */,
+				6374C9D021EA265700530045 /* PlaySpaceBitWrapper.swift */,
+			);
+			path = PlaySpaceBits;
+			sourceTree = "<group>";
+		};
+		6374C9D121EA265700530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9D221EA265700530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9D221EA265700530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9D321EA265700530045 /* ProtocolPlaySpaceBitModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9DB21EA26CB00530045 /* PlaySpaceBitTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9DD21EA26CB00530045 /* ModelAccessStrategies */,
+				6374C9E221EA26CB00530045 /* PlaySpaceBitType.swift */,
+				6374C9E021EA26CB00530045 /* PlaySpaceBitTypeCollection.swift */,
+				6374C9DC21EA26CB00530045 /* PlaySpaceBitTypeModelAdministrator.swift */,
+				6374C9E121EA26CB00530045 /* PlaySpaceBitTypeWrapper.swift */,
+			);
+			path = PlaySpaceBitTypes;
+			sourceTree = "<group>";
+		};
+		6374C9DD21EA26CB00530045 /* ModelAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9DE21EA26CB00530045 /* Protocols */,
+			);
+			path = ModelAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9DE21EA26CB00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9DF21EA26CB00530045 /* ProtocolPlaySpaceBitTypeModelAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9E821EA280C00530045 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9E921EA281900530045 /* Enums.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6374C9EB21EA2A3B00530045 /* GameDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9EC21EA2A3B00530045 /* Views */,
+			);
+			name = GameDisplay;
+			path = Displays/GameDisplay;
+			sourceTree = "<group>";
+		};
+		6374C9EC21EA2A3B00530045 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9ED21EA2A3B00530045 /* PlaySpaceViews */,
+				6374C9FC21EA2A3B00530045 /* PlaySpaceBitViews */,
+				6374CA0B21EA2A3B00530045 /* PlaySpaceMarkerViews */,
+				6374CA0E21EA2A3B00530045 /* PlayExperienceStepMarkerView */,
+				6374CA1621EA2A3B00530045 /* PlayExperienceStepViews */,
+				6374CA2621EA2A3B00530045 /* PlayAreaView */,
+				6374CA2E21EA2A3B00530045 /* PlayExperienceViews */,
+				6374CA3F21EA2A3B00530045 /* PlaySpaceContainerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6374C9ED21EA2A3B00530045 /* PlaySpaceViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9F221EA2A3B00530045 /* Protocols */,
+				6374C9EE21EA2A3B00530045 /* ViewAccessStrategies */,
+				6374C9F121EA2A3B00530045 /* PlaySpaceViewViewManagerBase.swift */,
+			);
+			path = PlaySpaceViews;
+			sourceTree = "<group>";
+		};
+		6374C9EE21EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9EF21EA2A3B00530045 /* Protocols */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374C9EF21EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9F021EA2A3B00530045 /* ProtocolPlaySpaceViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9F221EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAC221EA5D6C00530045 /* ProtocolPlaySpaceViewDelegate.swift */,
+				6374C9F321EA2A3B00530045 /* ProtocolPlaySpaceView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374C9FC21EA2A3B00530045 /* PlaySpaceBitViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA0921EA2A3B00530045 /* Protocols */,
+				6374CA0521EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA0821EA2A3B00530045 /* PlaySpaceBitViewViewManagerBase.swift */,
+			);
+			path = PlaySpaceBitViews;
+			sourceTree = "<group>";
+		};
+		6374CA0521EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA0621EA2A3B00530045 /* Protocols */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA0621EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA0721EA2A3B00530045 /* ProtocolPlaySpaceBitViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA0921EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAC421EA5D7C00530045 /* ProtocolPlaySpaceBitViewDelegate.swift */,
+				6374CA0A21EA2A3B00530045 /* ProtocolPlaySpaceBitView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA0B21EA2A3B00530045 /* PlaySpaceMarkerViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA0C21EA2A3B00530045 /* Protocols */,
+			);
+			path = PlaySpaceMarkerViews;
+			sourceTree = "<group>";
+		};
+		6374CA0C21EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CABD21EA5B9A00530045 /* ProtocolPlaySpaceMarkerViewDelegate.swift */,
+				6374CA0D21EA2A3B00530045 /* ProtocolPlaySpaceMarkerView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA0E21EA2A3B00530045 /* PlayExperienceStepMarkerView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1421EA2A3B00530045 /* Protocols */,
+				6374CA0F21EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA1321EA2A3B00530045 /* PlayExperienceStepMarkerViewViewManager.swift */,
+			);
+			path = PlayExperienceStepMarkerView;
+			sourceTree = "<group>";
+		};
+		6374CA0F21EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1121EA2A3B00530045 /* Protocols */,
+				6374CA1021EA2A3B00530045 /* PlayExperienceStepMarkerViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA1121EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1221EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA1421EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAC621EA5D9F00530045 /* ProtocolPlayExperienceStepMarkerViewDelegate.swift */,
+				6374CA1521EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA1621EA2A3B00530045 /* PlayExperienceStepViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2321EA2A3B00530045 /* Protocols */,
+				6374CA1821EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA1B21EA2A3B00530045 /* BasicPlayExperienceStepView */,
+				6374CA1721EA2A3B00530045 /* PlayExperienceStepViewViewManagerBase.swift */,
+			);
+			path = PlayExperienceStepViews;
+			sourceTree = "<group>";
+		};
+		6374CA1821EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1921EA2A3B00530045 /* Protocols */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA1921EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1A21EA2A3B00530045 /* ProtocolPlayExperienceStepViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA1B21EA2A3B00530045 /* BasicPlayExperienceStepView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2121EA2A3B00530045 /* Protocols */,
+				6374CA1C21EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA2021EA2A3B00530045 /* BasicPlayExperienceStepViewViewManager.swift */,
+			);
+			path = BasicPlayExperienceStepView;
+			sourceTree = "<group>";
+		};
+		6374CA1C21EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1E21EA2A3B00530045 /* Protocols */,
+				6374CA1D21EA2A3B00530045 /* BasicPlayExperienceStepViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA1E21EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA1F21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA2121EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2221EA2A3B00530045 /* ProtocolBasicPlayExperienceStepView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA2321EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2421EA2A3B00530045 /* ProtocolPlayExperienceStepView.swift */,
+				6374CA2521EA2A3B00530045 /* ProtocolPlayExperienceStepViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA2621EA2A3B00530045 /* PlayAreaView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2C21EA2A3B00530045 /* Protocols */,
+				6374CA2721EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA2B21EA2A3B00530045 /* PlayAreaViewViewManager.swift */,
+			);
+			path = PlayAreaView;
+			sourceTree = "<group>";
+		};
+		6374CA2721EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2921EA2A3B00530045 /* Protocols */,
+				6374CA2821EA2A3B00530045 /* PlayAreaViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA2921EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2A21EA2A3B00530045 /* ProtocolPlayAreaViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA2C21EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA2D21EA2A3B00530045 /* ProtocolPlayAreaView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA2E21EA2A3B00530045 /* PlayExperienceViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3B21EA2A3B00530045 /* Protocols */,
+				6374CA2F21EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA3321EA2A3B00530045 /* BasicPlayExperienceView */,
+				6374CA3221EA2A3B00530045 /* PlayExperienceViewViewManagerBase.swift */,
+			);
+			path = PlayExperienceViews;
+			sourceTree = "<group>";
+		};
+		6374CA2F21EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3021EA2A3B00530045 /* Protocols */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA3021EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3121EA2A3B00530045 /* ProtocolPlayExperienceViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA3321EA2A3B00530045 /* BasicPlayExperienceView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3921EA2A3B00530045 /* Protocols */,
+				6374CA3521EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA3421EA2A3B00530045 /* BasicPlayExperienceViewViewManager.swift */,
+			);
+			path = BasicPlayExperienceView;
+			sourceTree = "<group>";
+		};
+		6374CA3521EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3721EA2A3B00530045 /* Protocols */,
+				6374CA3621EA2A3B00530045 /* BasicPlayExperienceViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA3721EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3821EA2A3B00530045 /* ProtocolBasicPlayExperienceViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA3921EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3A21EA2A3B00530045 /* ProtocolBasicPlayExperienceView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA3B21EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA3C21EA2A3B00530045 /* ProtocolPlayExperienceViewDelegate.swift */,
+				6374CA3D21EA2A3B00530045 /* ProtocolPlayExperienceView.swift */,
+				6374CA3E21EA2A3B00530045 /* ProtocolPlayExperienceContainerViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA3F21EA2A3B00530045 /* PlaySpaceContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA4521EA2A3B00530045 /* Protocols */,
+				6374CA4121EA2A3B00530045 /* ViewAccessStrategies */,
+				6374CA4021EA2A3B00530045 /* PlaySpaceContainerViewViewManager.swift */,
+			);
+			path = PlaySpaceContainerView;
+			sourceTree = "<group>";
+		};
+		6374CA4121EA2A3B00530045 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA4321EA2A3B00530045 /* Protocols */,
+				6374CA4221EA2A3B00530045 /* PlaySpaceContainerViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		6374CA4321EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA4421EA2A3B00530045 /* ProtocolPlaySpaceContainerViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA4521EA2A3B00530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA4621EA2A3B00530045 /* ProtocolPlaySpaceContainerView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA7321EA3FC200530045 /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7421EA3FC200530045 /* GameDisplay */,
+			);
+			path = Displays;
+			sourceTree = "<group>";
+		};
+		6374CA7421EA3FC200530045 /* GameDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7521EA3FC200530045 /* Views */,
+			);
+			path = GameDisplay;
+			sourceTree = "<group>";
+		};
+		6374CA7521EA3FC200530045 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7621EA3FC200530045 /* PlaySpaceViews */,
+				6374CA7A21EA3FC200530045 /* PlaySpaceBitViews */,
+				6374CA7E21EA3FC200530045 /* PlaySpaceMarkerViews */,
+				6374CA7F21EA3FC200530045 /* PlayExperienceStepMarkerView */,
+				6374CA8321EA3FC200530045 /* PlayExperienceStepViews */,
+				6374CA8B21EA3FC200530045 /* PlayAreaView */,
+				6374CA8F21EA3FC200530045 /* PlayExperienceViews */,
+				6374CA9721EA3FC200530045 /* PlaySpaceContainerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6374CA7621EA3FC200530045 /* PlaySpaceViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7821EA3FC200530045 /* Protocols */,
+				6374CA7721EA3FC200530045 /* PlaySpaceViewControlManagerBase.swift */,
+			);
+			path = PlaySpaceViews;
+			sourceTree = "<group>";
+		};
+		6374CA7821EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7921EA3FC200530045 /* ProtocolPlaySpaceViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA7A21EA3FC200530045 /* PlaySpaceBitViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7C21EA3FC200530045 /* Protocols */,
+				6374CA7B21EA3FC200530045 /* PlaySpaceBitViewControlManagerBase.swift */,
+			);
+			path = PlaySpaceBitViews;
+			sourceTree = "<group>";
+		};
+		6374CA7C21EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA7D21EA3FC200530045 /* ProtocolPlaySpaceBitViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA7E21EA3FC200530045 /* PlaySpaceMarkerViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlaySpaceMarkerViews;
+			sourceTree = "<group>";
+		};
+		6374CA7F21EA3FC200530045 /* PlayExperienceStepMarkerView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8121EA3FC200530045 /* Protocols */,
+				6374CA8021EA3FC200530045 /* PlayExperienceStepMarkerViewControlManager.swift */,
+			);
+			path = PlayExperienceStepMarkerView;
+			sourceTree = "<group>";
+		};
+		6374CA8121EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8221EA3FC200530045 /* ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA8321EA3FC200530045 /* PlayExperienceStepViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8921EA3FC200530045 /* Protocols */,
+				6374CA8521EA3FC200530045 /* BasicPlayExperienceStepView */,
+				6374CA8421EA3FC200530045 /* PlayExperienceStepViewControlManagerBase.swift */,
+			);
+			path = PlayExperienceStepViews;
+			sourceTree = "<group>";
+		};
+		6374CA8521EA3FC200530045 /* BasicPlayExperienceStepView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8721EA3FC200530045 /* Protocols */,
+				6374CA8621EA3FC200530045 /* BasicPlayExperienceStepViewControlManager.swift */,
+			);
+			path = BasicPlayExperienceStepView;
+			sourceTree = "<group>";
+		};
+		6374CA8721EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8821EA3FC200530045 /* ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA8921EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8A21EA3FC200530045 /* ProtocolPlayExperienceStepViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA8B21EA3FC200530045 /* PlayAreaView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8D21EA3FC200530045 /* Protocols */,
+				6374CA8C21EA3FC200530045 /* PlayAreaViewControlManager.swift */,
+			);
+			path = PlayAreaView;
+			sourceTree = "<group>";
+		};
+		6374CA8D21EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA8E21EA3FC200530045 /* ProtocolPlayAreaViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA8F21EA3FC200530045 /* PlayExperienceViews */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9421EA3FC200530045 /* Protocols */,
+				6374CA9021EA3FC200530045 /* BasicPlayExperienceView */,
+				6374CA9621EA3FC200530045 /* PlayExperienceViewControlManagerBase.swift */,
+			);
+			path = PlayExperienceViews;
+			sourceTree = "<group>";
+		};
+		6374CA9021EA3FC200530045 /* BasicPlayExperienceView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9221EA3FC200530045 /* Protocols */,
+				6374CA9121EA3FC200530045 /* BasicPlayExperienceViewControlManager.swift */,
+			);
+			path = BasicPlayExperienceView;
+			sourceTree = "<group>";
+		};
+		6374CA9221EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9321EA3FC200530045 /* ProtocolBasicPlayExperienceViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA9421EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9521EA3FC200530045 /* ProtocolPlayExperienceViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CA9721EA3FC200530045 /* PlaySpaceContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9921EA3FC200530045 /* Protocols */,
+				6374CA9821EA3FC200530045 /* PlaySpaceContainerViewControlManager.swift */,
+			);
+			path = PlaySpaceContainerView;
+			sourceTree = "<group>";
+		};
+		6374CA9921EA3FC200530045 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6374CA9A21EA3FC200530045 /* ProtocolPlaySpaceContainerViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6374CAAF21EA41B800530045 /* ControlManagerBase */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAB021EA41B800530045 /* Extensions */,
+			);
+			path = ControlManagerBase;
+			sourceTree = "<group>";
+		};
+		6374CAB021EA41B800530045 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6374CAB121EA41B800530045 /* ExtensionControlManagerBase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63AA5B7A1EF45E38008200B8 = {
+			isa = PBXGroup;
+			children = (
+				63AA5B861EF45E38008200B8 /* SFGame */,
+				63AA5B851EF45E38008200B8 /* Products */,
+				6374C8CC21E6417D00530045 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63AA5B851EF45E38008200B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63AA5B841EF45E38008200B8 /* SFGame.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63AA5B861EF45E38008200B8 /* SFGame */ = {
+			isa = PBXGroup;
+			children = (
+				6374C9E821EA280C00530045 /* Core */,
+				6374C8C521E6400C00530045 /* Model */,
+				6374C8C721E6407100530045 /* View */,
+				6374C8C621E6406A00530045 /* Controller */,
+				63AA5B871EF45E38008200B8 /* SFGame.h */,
+				63AA5B881EF45E38008200B8 /* Info.plist */,
+			);
+			path = SFGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63AA5B811EF45E38008200B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63AA5B891EF45E38008200B8 /* SFGame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63AA5B831EF45E38008200B8 /* SFGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63AA5B8C1EF45E38008200B8 /* Build configuration list for PBXNativeTarget "SFGame" */;
+			buildPhases = (
+				63AA5B7F1EF45E38008200B8 /* Sources */,
+				63AA5B801EF45E38008200B8 /* Frameworks */,
+				63AA5B811EF45E38008200B8 /* Headers */,
+				63AA5B821EF45E38008200B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFGame;
+			productName = SFCore;
+			productReference = 63AA5B841EF45E38008200B8 /* SFGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63AA5B7B1EF45E38008200B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = com.smartfoundation;
+				TargetAttributes = {
+					63AA5B831EF45E38008200B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z8LTFFXX42;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63AA5B7E1EF45E38008200B8 /* Build configuration list for PBXProject "SFGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63AA5B7A1EF45E38008200B8;
+			productRefGroup = 63AA5B851EF45E38008200B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63AA5B831EF45E38008200B8 /* SFGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63AA5B821EF45E38008200B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63AA5B7F1EF45E38008200B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6374CA7221EA2A3B00530045 /* ProtocolPlaySpaceContainerView.swift in Sources */,
+				6374CAA721EA3FC200530045 /* BasicPlayExperienceViewControlManager.swift in Sources */,
+				6374CA6E21EA2A3B00530045 /* ProtocolPlayExperienceContainerViewDelegate.swift in Sources */,
+				6374C9B021EA1D8E00530045 /* PlayMoveCollection.swift in Sources */,
+				6374C97121EA121B00530045 /* PlayWrapper.swift in Sources */,
+				6374CA6321EA2A3B00530045 /* ProtocolPlayAreaViewViewAccessStrategy.swift in Sources */,
+				6374CA6221EA2A3B00530045 /* PlayAreaViewViewAccessStrategy.swift in Sources */,
+				6374C98F21EA1BBA00530045 /* PlayExperienceWrapper.swift in Sources */,
+				6374CAA121EA3FC200530045 /* PlayExperienceStepViewControlManagerBase.swift in Sources */,
+				6374C90521E6431E00530045 /* PlaySpace.swift in Sources */,
+				6374CA9D21EA3FC200530045 /* PlaySpaceBitViewControlManagerBase.swift in Sources */,
+				6374CAA321EA3FC200530045 /* ProtocolBasicPlayExperienceStepViewControlManagerDelegate.swift in Sources */,
+				6374C9A021EA1CFA00530045 /* ProtocolPlayExperienceStepModelAccessStrategy.swift in Sources */,
+				6374C8CA21E6412600530045 /* ModelProperties.swift in Sources */,
+				6374CAAC21EA3FC200530045 /* ProtocolPlaySpaceContainerViewControlManagerDelegate.swift in Sources */,
+				6374C90721E6431E00530045 /* PlaySpaceCollection.swift in Sources */,
+				6374C9CA21EA25F200530045 /* PlaySpaceBitData.swift in Sources */,
+				6374C9AC21EA1D8E00530045 /* PlayMove.swift in Sources */,
+				6374CAAB21EA3FC200530045 /* PlaySpaceContainerViewControlManager.swift in Sources */,
+				6374C9CC21EA25F200530045 /* PlaySpaceBitDataAttributeDataWrapper.swift in Sources */,
+				6374CA5E21EA2A3B00530045 /* BasicPlayExperienceStepViewViewManager.swift in Sources */,
+				6374CAAA21EA3FC200530045 /* PlayExperienceViewControlManagerBase.swift in Sources */,
+				6374CA5221EA2A3B00530045 /* ProtocolPlaySpaceBitViewViewAccessStrategy.swift in Sources */,
+				6374CA5321EA2A3B00530045 /* PlaySpaceBitViewViewManagerBase.swift in Sources */,
+				6374C9BC21EA257400530045 /* PlayResultWrapper.swift in Sources */,
+				6374C9AF21EA1D8E00530045 /* PlayMoveWrapper.swift in Sources */,
+				6374C9E721EA26CB00530045 /* PlaySpaceBitType.swift in Sources */,
+				6374C90921E6431E00530045 /* ProtocolPlaySpaceModelAccessStrategy.swift in Sources */,
+				6374CA6521EA2A3B00530045 /* ProtocolPlayAreaView.swift in Sources */,
+				6374C90221E6431E00530045 /* PlaySpaceData.swift in Sources */,
+				6374CA6F21EA2A3B00530045 /* PlaySpaceContainerViewViewManager.swift in Sources */,
+				6374C97A21EA1B1600530045 /* PlayDataModelAdministrator.swift in Sources */,
+				6374C9A221EA1CFA00530045 /* PlayExperienceStepOnCompleteDataWrapper.swift in Sources */,
+				6374C97D21EA1B1600530045 /* ProtocolPlayDataModelAccessStrategy.swift in Sources */,
+				6374CAA021EA3FC200530045 /* ProtocolPlayExperienceStepMarkerViewControlManagerDelegate.swift in Sources */,
+				6374C8FB21E6431E00530045 /* ProtocolPlaySpaceTypeModelAccessStrategy.swift in Sources */,
+				6374CA6121EA2A3B00530045 /* ProtocolPlayExperienceStepViewDelegate.swift in Sources */,
+				6374CA6B21EA2A3B00530045 /* ProtocolBasicPlayExperienceView.swift in Sources */,
+				6374C9E321EA26CB00530045 /* PlaySpaceBitTypeModelAdministrator.swift in Sources */,
+				6374C8FA21E6431E00530045 /* PlaySpaceTypeWrapper.swift in Sources */,
+				6374C9E521EA26CB00530045 /* PlaySpaceBitTypeCollection.swift in Sources */,
+				6374C97C21EA1B1600530045 /* PlayData.swift in Sources */,
+				6374CA4721EA2A3B00530045 /* ProtocolPlaySpaceViewViewAccessStrategy.swift in Sources */,
+				6374C90821E6431E00530045 /* PlaySpaceModelAdministrator.swift in Sources */,
+				6374C9EA21EA281900530045 /* Enums.swift in Sources */,
+				6374C99B21EA1CFA00530045 /* PlayExperienceStep.swift in Sources */,
+				6374CA4921EA2A3B00530045 /* ProtocolPlaySpaceView.swift in Sources */,
+				6374C98C21EA1BBA00530045 /* ProtocolPlayExperienceModelAccessStrategy.swift in Sources */,
+				6374C90021E6431E00530045 /* ProtocolPlaySpaceDataModelAccessStrategy.swift in Sources */,
+				6374CA5521EA2A3B00530045 /* ProtocolPlaySpaceMarkerView.swift in Sources */,
+				6374C9D921EA265700530045 /* PlaySpaceBitCollection.swift in Sources */,
+				6374C98D21EA1BBA00530045 /* PlayExperienceModelAdministrator.swift in Sources */,
+				6374C9DA21EA265700530045 /* PlaySpaceBitModelAdministrator.swift in Sources */,
+				6374C8CB21E6412600530045 /* GameModelManager.swift in Sources */,
+				6374C9B121EA1D8E00530045 /* PlayMoveModelAdministrator.swift in Sources */,
+				6374CA9C21EA3FC200530045 /* ProtocolPlaySpaceViewControlManagerDelegate.swift in Sources */,
+				6374CAA821EA3FC200530045 /* ProtocolBasicPlayExperienceViewControlManagerDelegate.swift in Sources */,
+				6374C9E421EA26CB00530045 /* ProtocolPlaySpaceBitTypeModelAccessStrategy.swift in Sources */,
+				6374C9AE21EA1D8E00530045 /* ProtocolPlayMoveModelAccessStrategy.swift in Sources */,
+				6374CA6C21EA2A3B00530045 /* ProtocolPlayExperienceViewDelegate.swift in Sources */,
+				6374C9D721EA265700530045 /* PlaySpaceBitWrapper.swift in Sources */,
+				6374CA5A21EA2A3B00530045 /* PlayExperienceStepViewViewManagerBase.swift in Sources */,
+				6374CA5921EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerView.swift in Sources */,
+				6374C90321E6431E00530045 /* PlaySpaceDataWrapper.swift in Sources */,
+				6374C9C921EA25F200530045 /* ProtocolPlaySpaceBitDataModelAccessStrategy.swift in Sources */,
+				6374C9AD21EA1D8E00530045 /* PlayMoveOnCompleteDataWrapper.swift in Sources */,
+				6374CA6021EA2A3B00530045 /* ProtocolPlayExperienceStepView.swift in Sources */,
+				6374CAC721EA5D9F00530045 /* ProtocolPlayExperienceStepMarkerViewDelegate.swift in Sources */,
+				6374C99F21EA1CFA00530045 /* PlayExperienceStepCollection.swift in Sources */,
+				6374CAA421EA3FC200530045 /* ProtocolPlayExperienceStepViewControlManagerDelegate.swift in Sources */,
+				6374C9C821EA25F200530045 /* PlaySpaceBitDataWrapper.swift in Sources */,
+				6374C98A21EA1BBA00530045 /* PlayExperience.swift in Sources */,
+				6374C9A121EA1CFA00530045 /* PlayExperienceStepResultWrapper.swift in Sources */,
+				6374CA6D21EA2A3B00530045 /* ProtocolPlayExperienceView.swift in Sources */,
+				6374CA5B21EA2A3B00530045 /* ProtocolPlayExperienceStepViewViewAccessStrategy.swift in Sources */,
+				6374C97E21EA1B1600530045 /* PlayDataCollection.swift in Sources */,
+				6374CA9F21EA3FC200530045 /* PlayExperienceStepMarkerViewControlManager.swift in Sources */,
+				6374C90421E6431E00530045 /* PlaySpaceDataCollection.swift in Sources */,
+				6374CA5721EA2A3B00530045 /* ProtocolPlayExperienceStepMarkerViewViewAccessStrategy.swift in Sources */,
+				6374C99C21EA1CFA00530045 /* PlayExperienceStepContentDataWrapper.swift in Sources */,
+				6374C98E21EA1BBA00530045 /* PlayExperienceResultWrapper.swift in Sources */,
+				6374C9CB21EA25F200530045 /* PlaySpaceBitDataCollection.swift in Sources */,
+				6374C9CD21EA25F200530045 /* PlaySpaceBitDataModelAdministrator.swift in Sources */,
+				6374CAB221EA41B800530045 /* ExtensionControlManagerBase.swift in Sources */,
+				6374C90121E6431E00530045 /* PlaySpaceDataAttributeDataWrapper.swift in Sources */,
+				6374CAA221EA3FC200530045 /* BasicPlayExperienceStepViewControlManager.swift in Sources */,
+				6374CA6821EA2A3B00530045 /* BasicPlayExperienceViewViewManager.swift in Sources */,
+				6374C9BD21EA257400530045 /* PlayResult.swift in Sources */,
+				6374C9BB21EA257400530045 /* PlayResultModelAdministrator.swift in Sources */,
+				6374C9D621EA265700530045 /* PlaySpaceBit.swift in Sources */,
+				6374CA6621EA2A3B00530045 /* ProtocolPlayExperienceViewViewAccessStrategy.swift in Sources */,
+				6374CA9B21EA3FC200530045 /* PlaySpaceViewControlManagerBase.swift in Sources */,
+				6374CABE21EA5B9A00530045 /* ProtocolPlaySpaceMarkerViewDelegate.swift in Sources */,
+				6374CA6421EA2A3B00530045 /* PlayAreaViewViewManager.swift in Sources */,
+				6374C9E621EA26CB00530045 /* PlaySpaceBitTypeWrapper.swift in Sources */,
+				6374CA5821EA2A3B00530045 /* PlayExperienceStepMarkerViewViewManager.swift in Sources */,
+				6374CAC521EA5D7C00530045 /* ProtocolPlaySpaceBitViewDelegate.swift in Sources */,
+				6374CA7021EA2A3B00530045 /* PlaySpaceContainerViewViewAccessStrategy.swift in Sources */,
+				6374CA4821EA2A3B00530045 /* PlaySpaceViewViewManagerBase.swift in Sources */,
+				6374C9BE21EA257400530045 /* PlayResultCollection.swift in Sources */,
+				6374C98921EA1BBA00530045 /* PlayExperienceOnCompleteDataWrapper.swift in Sources */,
+				6374CA5D21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepViewViewAccessStrategy.swift in Sources */,
+				6374C97B21EA1B1600530045 /* PlayDataWrapper.swift in Sources */,
+				6374CAA621EA3FC200530045 /* ProtocolPlayAreaViewControlManagerDelegate.swift in Sources */,
+				6374C98B21EA1BBA00530045 /* PlayExperienceCollection.swift in Sources */,
+				6374C8FE21E6431E00530045 /* PlaySpaceType.swift in Sources */,
+				6374CA5421EA2A3B00530045 /* ProtocolPlaySpaceBitView.swift in Sources */,
+				6374CA6921EA2A3B00530045 /* BasicPlayExperienceViewViewAccessStrategy.swift in Sources */,
+				6374CA6721EA2A3B00530045 /* PlayExperienceViewViewManagerBase.swift in Sources */,
+				6374CA5F21EA2A3B00530045 /* ProtocolBasicPlayExperienceStepView.swift in Sources */,
+				6374CAC321EA5D6C00530045 /* ProtocolPlaySpaceViewDelegate.swift in Sources */,
+				6374C8FD21E6431E00530045 /* PlaySpaceTypeModelAdministrator.swift in Sources */,
+				6374CA6A21EA2A3B00530045 /* ProtocolBasicPlayExperienceViewViewAccessStrategy.swift in Sources */,
+				6374CAA521EA3FC200530045 /* PlayAreaViewControlManager.swift in Sources */,
+				6374C8FF21E6431E00530045 /* PlaySpaceDataModelAdministrator.swift in Sources */,
+				6374C9BA21EA257400530045 /* ProtocolPlayResultModelAccessStrategy.swift in Sources */,
+				6374C99E21EA1CFA00530045 /* PlayExperienceStepModelAdministrator.swift in Sources */,
+				6374CAA921EA3FC200530045 /* ProtocolPlayExperienceViewControlManagerDelegate.swift in Sources */,
+				6374CA5C21EA2A3B00530045 /* BasicPlayExperienceStepViewViewAccessStrategy.swift in Sources */,
+				6374C9D821EA265700530045 /* ProtocolPlaySpaceBitModelAccessStrategy.swift in Sources */,
+				6374CA9E21EA3FC200530045 /* ProtocolPlaySpaceBitViewControlManagerDelegate.swift in Sources */,
+				6374CA7121EA2A3B00530045 /* ProtocolPlaySpaceContainerViewViewAccessStrategy.swift in Sources */,
+				6374C99D21EA1CFA00530045 /* PlayExperienceStepWrapper.swift in Sources */,
+				6374C90621E6431E00530045 /* PlaySpaceWrapper.swift in Sources */,
+				6374CA5621EA2A3B00530045 /* PlayExperienceStepMarkerViewViewAccessStrategy.swift in Sources */,
+				6374C8FC21E6431E00530045 /* PlaySpaceTypeCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63AA5B8A1EF45E38008200B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63AA5B8B1EF45E38008200B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63AA5B8D1EF45E38008200B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8LTFFXX42;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFGame/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartfoundation.SFGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		63AA5B8E1EF45E38008200B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8LTFFXX42;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFGame/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartfoundation.SFGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63AA5B7E1EF45E38008200B8 /* Build configuration list for PBXProject "SFGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AA5B8A1EF45E38008200B8 /* Debug */,
+				63AA5B8B1EF45E38008200B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63AA5B8C1EF45E38008200B8 /* Build configuration list for PBXNativeTarget "SFGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AA5B8D1EF45E38008200B8 /* Debug */,
+				63AA5B8E1EF45E38008200B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63AA5B7B1EF45E38008200B8 /* Project object */;
+}

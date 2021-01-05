@@ -1,0 +1,1282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		636BD2BF21FB524500A38AC7 /* GridScapeDeckDraggingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD2BE21FB524500A38AC7 /* GridScapeDeckDraggingState.swift */; };
+		636BD31B22008ABC00A38AC7 /* CellWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD31A22008ABC00A38AC7 /* CellWrapperBase.swift */; };
+		636BD33222008D7600A38AC7 /* SFModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BD33322008D7600A38AC7 /* SFModel.framework */; };
+		636BD34822009A2200A38AC7 /* TileWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD34722009A2200A38AC7 /* TileWrapperBase.swift */; };
+		636BD34A22009AB500A38AC7 /* ModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD34922009AB500A38AC7 /* ModelProperties.swift */; };
+		636BD34D22009B2500A38AC7 /* SFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BD34E22009B2500A38AC7 /* SFCore.framework */; };
+		636BD34F22009B2A00A38AC7 /* SFSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BD35022009B2A00A38AC7 /* SFSerialization.framework */; };
+		636BD44A2203475100A38AC7 /* GridScapeContainerViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD4472203475100A38AC7 /* GridScapeContainerViewControlManager.swift */; };
+		636BD44B2203475100A38AC7 /* ProtocolGridScapeContainerViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD4492203475100A38AC7 /* ProtocolGridScapeContainerViewControlManagerDelegate.swift */; };
+		636BD4542203475D00A38AC7 /* GridScapeContainerViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD44D2203475D00A38AC7 /* GridScapeContainerViewViewManager.swift */; };
+		636BD4552203475D00A38AC7 /* GridScapeContainerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD44F2203475D00A38AC7 /* GridScapeContainerViewViewAccessStrategy.swift */; };
+		636BD4562203475D00A38AC7 /* ProtocolGridScapeContainerViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD4512203475D00A38AC7 /* ProtocolGridScapeContainerViewViewAccessStrategy.swift */; };
+		636BD4572203475D00A38AC7 /* ProtocolGridScapeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD4532203475D00A38AC7 /* ProtocolGridScapeContainerView.swift */; };
+		636BD52D220C622900A38AC7 /* ProtocolGridScapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD52C220C622900A38AC7 /* ProtocolGridScapeCell.swift */; };
+		636D8E2521A31233005AE0A8 /* SFGridScape.h in Headers */ = {isa = PBXBuildFile; fileRef = 636D8E2321A31233005AE0A8 /* SFGridScape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636D8E5921A42691005AE0A8 /* GridScapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E5821A42691005AE0A8 /* GridScapeManager.swift */; };
+		636D8E5B21A426A2005AE0A8 /* ProtocolGridScapeManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E5A21A426A2005AE0A8 /* ProtocolGridScapeManagerDelegate.swift */; };
+		636D8E8121A42D0F005AE0A8 /* CellCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E7E21A42D0F005AE0A8 /* CellCoord.swift */; };
+		636D8E8221A42D0F005AE0A8 /* CellCoordRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E7F21A42D0F005AE0A8 /* CellCoordRange.swift */; };
+		636D8E8321A42D0F005AE0A8 /* BlockCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E8021A42D0F005AE0A8 /* BlockCoord.swift */; };
+		636D8E8B21A42E60005AE0A8 /* GridBlockViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E8421A42E60005AE0A8 /* GridBlockViewViewManager.swift */; };
+		636D8E8C21A42E60005AE0A8 /* ProtocolGridBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E8621A42E60005AE0A8 /* ProtocolGridBlockView.swift */; };
+		636D8E8D21A42E60005AE0A8 /* GridBlockViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E8821A42E60005AE0A8 /* GridBlockViewViewAccessStrategy.swift */; };
+		636D8E8E21A42E60005AE0A8 /* ProtocolGridBlockViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E8A21A42E60005AE0A8 /* ProtocolGridBlockViewViewAccessStrategy.swift */; };
+		636D8EA221A42F94005AE0A8 /* GridCellViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E9C21A42F94005AE0A8 /* GridCellViewViewAccessStrategy.swift */; };
+		636D8EA321A42F94005AE0A8 /* ProtocolGridCellViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E9E21A42F94005AE0A8 /* ProtocolGridCellViewViewAccessStrategy.swift */; };
+		636D8EA421A42F94005AE0A8 /* GridCellViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8E9F21A42F94005AE0A8 /* GridCellViewViewManager.swift */; };
+		636D8EA521A42F94005AE0A8 /* ProtocolGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EA121A42F94005AE0A8 /* ProtocolGridCellView.swift */; };
+		636D8EA921A43037005AE0A8 /* ProtocolGridBlockViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EA721A43037005AE0A8 /* ProtocolGridBlockViewControlManagerDelegate.swift */; };
+		636D8EAA21A43037005AE0A8 /* GridBlockViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EA821A43037005AE0A8 /* GridBlockViewControlManager.swift */; };
+		636D8EAF21A43072005AE0A8 /* GridCellViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EAC21A43072005AE0A8 /* GridCellViewControlManager.swift */; };
+		636D8EB021A43072005AE0A8 /* ProtocolGridCellViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EAE21A43072005AE0A8 /* ProtocolGridCellViewControlManagerDelegate.swift */; };
+		636D8EB521A431D6005AE0A8 /* GridBlockProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EB121A431D5005AE0A8 /* GridBlockProperties.swift */; };
+		636D8EB621A431D6005AE0A8 /* GridCellProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EB221A431D5005AE0A8 /* GridCellProperties.swift */; };
+		636D8EB721A431D6005AE0A8 /* GridProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EB321A431D5005AE0A8 /* GridProperties.swift */; };
+		636D8EB821A431D6005AE0A8 /* GridState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EB421A431D6005AE0A8 /* GridState.swift */; };
+		636D8EBA21A434DA005AE0A8 /* ProtocolGridBlockViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EB921A434DA005AE0A8 /* ProtocolGridBlockViewDelegate.swift */; };
+		636D8EBF21A43B83005AE0A8 /* GridBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EBD21A43B82005AE0A8 /* GridBlockView.swift */; };
+		636D8EC021A43B83005AE0A8 /* GridBlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D8EBE21A43B82005AE0A8 /* GridBlockView.xib */; };
+		636D8EC621A43C66005AE0A8 /* GridCellViewBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D8EC221A43C66005AE0A8 /* GridCellViewBase.xib */; };
+		636D8EC721A43C66005AE0A8 /* GridCellViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EC321A43C66005AE0A8 /* GridCellViewBase.swift */; };
+		636D8EC821A43C66005AE0A8 /* ProtocolGridCellViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EC521A43C66005AE0A8 /* ProtocolGridCellViewDelegate.swift */; };
+		636D8ED321A4A620005AE0A8 /* GridScapeViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8ECD21A4A620005AE0A8 /* GridScapeViewViewAccessStrategy.swift */; };
+		636D8ED421A4A620005AE0A8 /* ProtocolGridScapeViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8ECF21A4A620005AE0A8 /* ProtocolGridScapeViewViewAccessStrategy.swift */; };
+		636D8ED521A4A620005AE0A8 /* GridScapeViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8ED021A4A620005AE0A8 /* GridScapeViewViewManager.swift */; };
+		636D8ED621A4A620005AE0A8 /* ProtocolGridScapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8ED221A4A620005AE0A8 /* ProtocolGridScapeView.swift */; };
+		636D8EDB21A4A69E005AE0A8 /* GridScapeViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8ED821A4A69E005AE0A8 /* GridScapeViewControlManager.swift */; };
+		636D8EDC21A4A69E005AE0A8 /* ProtocolGridScapeViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EDA21A4A69E005AE0A8 /* ProtocolGridScapeViewControlManagerDelegate.swift */; };
+		636D8EE221A4A710005AE0A8 /* GridScapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EDE21A4A710005AE0A8 /* GridScapeView.swift */; };
+		636D8EE321A4A710005AE0A8 /* GridScapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D8EDF21A4A710005AE0A8 /* GridScapeView.xib */; };
+		636D8EE421A4A710005AE0A8 /* ProtocolGridScapeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EE121A4A710005AE0A8 /* ProtocolGridScapeViewDelegate.swift */; };
+		636D8EF021A5774C005AE0A8 /* GridScapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8EEF21A5774C005AE0A8 /* GridScapeHelper.swift */; };
+		636D8EF221A579FC005AE0A8 /* SFView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636D8EF321A579FC005AE0A8 /* SFView.framework */; };
+		636D8EF421A57A0F005AE0A8 /* SFGlobalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636D8EF521A57A0F005AE0A8 /* SFGlobalization.framework */; };
+		636D8F2821A8064D005AE0A8 /* GridScrollState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F2721A8064D005AE0A8 /* GridScrollState.swift */; };
+		636D8F4121A99871005AE0A8 /* GridBuildProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F4021A99871005AE0A8 /* GridBuildProperties.swift */; };
+		636D8F6C21AD509B005AE0A8 /* GridCellNeighbour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F6B21AD509B005AE0A8 /* GridCellNeighbour.swift */; };
+		636D8F6E21AD50F4005AE0A8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F6D21AD50F4005AE0A8 /* Enums.swift */; };
+		636D8F8721B3EF7C005AE0A8 /* GridTileViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8121B3EF7C005AE0A8 /* GridTileViewViewAccessStrategy.swift */; };
+		636D8F8821B3EF7C005AE0A8 /* ProtocolGridTileViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8321B3EF7C005AE0A8 /* ProtocolGridTileViewViewAccessStrategy.swift */; };
+		636D8F8921B3EF7C005AE0A8 /* GridTileViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8421B3EF7C005AE0A8 /* GridTileViewViewManager.swift */; };
+		636D8F8A21B3EF7C005AE0A8 /* ProtocolGridTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8621B3EF7C005AE0A8 /* ProtocolGridTileView.swift */; };
+		636D8F8C21B3EFF4005AE0A8 /* GridTileProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8B21B3EFF4005AE0A8 /* GridTileProperties.swift */; };
+		636D8F9121B3F0D0005AE0A8 /* GridTileViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F8E21B3F0D0005AE0A8 /* GridTileViewControlManager.swift */; };
+		636D8F9221B3F0D0005AE0A8 /* ProtocolGridTileViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F9021B3F0D0005AE0A8 /* ProtocolGridTileViewControlManagerDelegate.swift */; };
+		636D8F9821B3F124005AE0A8 /* GridTileViewBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D8F9421B3F124005AE0A8 /* GridTileViewBase.xib */; };
+		636D8F9921B3F124005AE0A8 /* GridTileViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F9521B3F124005AE0A8 /* GridTileViewBase.swift */; };
+		636D8F9A21B3F124005AE0A8 /* ProtocolGridTileViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D8F9721B3F124005AE0A8 /* ProtocolGridTileViewDelegate.swift */; };
+		6374CB0F21ECD0F700530045 /* SFController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374CB1021ECD0F700530045 /* SFController.framework */; };
+		637E14CB227DD18B00ED2539 /* TokenWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14C7227DD18B00ED2539 /* TokenWrapperBase.swift */; };
+		637E14CC227DD18B00ED2539 /* TokenAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14C8227DD18B00ED2539 /* TokenAttributesWrapper.swift */; };
+		637E14CD227DD18B00ED2539 /* ProtocolGridScapeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14CA227DD18B00ED2539 /* ProtocolGridScapeToken.swift */; };
+		637E14DD227DEFC100ED2539 /* GridTokenProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14DC227DEFC100ED2539 /* GridTokenProperties.swift */; };
+		637E14E6227DF06E00ED2539 /* GridTokenViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14E0227DF06E00ED2539 /* GridTokenViewViewAccessStrategy.swift */; };
+		637E14E7227DF06E00ED2539 /* ProtocolGridTokenViewViewAccessStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14E2227DF06E00ED2539 /* ProtocolGridTokenViewViewAccessStrategy.swift */; };
+		637E14E8227DF06E00ED2539 /* GridTokenViewViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14E3227DF06E00ED2539 /* GridTokenViewViewManager.swift */; };
+		637E14E9227DF06E00ED2539 /* ProtocolGridTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14E5227DF06E00ED2539 /* ProtocolGridTokenView.swift */; };
+		637E14EF227DF13E00ED2539 /* GridTokenViewBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637E14EB227DF13E00ED2539 /* GridTokenViewBase.xib */; };
+		637E14F0227DF13E00ED2539 /* GridTokenViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14EC227DF13E00ED2539 /* GridTokenViewBase.swift */; };
+		637E14F1227DF13E00ED2539 /* ProtocolGridTokenViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14EE227DF13E00ED2539 /* ProtocolGridTokenViewDelegate.swift */; };
+		637E14F6227DF2D200ED2539 /* GridTokenViewControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14F3227DF2D200ED2539 /* GridTokenViewControlManager.swift */; };
+		637E14F7227DF2D200ED2539 /* ProtocolGridTokenViewControlManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E14F5227DF2D200ED2539 /* ProtocolGridTokenViewControlManagerDelegate.swift */; };
+		63816466224D351200718A4B /* ProtocolGridScapeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63816465224D351200718A4B /* ProtocolGridScapeTile.swift */; };
+		63816469224D352600718A4B /* TileAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63816467224D352500718A4B /* TileAttributesWrapper.swift */; };
+		6381646A224D352600718A4B /* TileSideAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63816468224D352600718A4B /* TileSideAttributesWrapper.swift */; };
+		6381646D224D363300718A4B /* TileTypeWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381646C224D363300718A4B /* TileTypeWrapperBase.swift */; };
+		63AB9E492227EF1D00E7125A /* CellSideAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB9E482227EF1D00E7125A /* CellSideAttributesWrapper.swift */; };
+		63AB9E4B2227EF2600E7125A /* CellAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB9E4A2227EF2500E7125A /* CellAttributesWrapper.swift */; };
+		63AB9E87222B01BD00E7125A /* CellTypeWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB9E86222B01BD00E7125A /* CellTypeWrapperBase.swift */; };
+		63AB9E88222C647C00E7125A /* SFGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB9E89222C647C00E7125A /* SFGraphics.framework */; };
+		63C3605721BEB9C1002FA76C /* GridBlockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3605621BEB9C1002FA76C /* GridBlockState.swift */; };
+		63C3606F21C3F4CB002FA76C /* GridCellAttributesIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3606E21C3F4CB002FA76C /* GridCellAttributesIndex.swift */; };
+		63C3607121C40168002FA76C /* CellPropertyChangedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3607021C40168002FA76C /* CellPropertyChangedWrapper.swift */; };
+		63C3607321C7D1BC002FA76C /* GridDraggingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3607221C7D1BC002FA76C /* GridDraggingState.swift */; };
+		63C3607521CE4249002FA76C /* CellCoordVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3607421CE4248002FA76C /* CellCoordVector.swift */; };
+		63CB8CB52317E1EF007150C7 /* PathPointWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CB22317E1EF007150C7 /* PathPointWrapperBase.swift */; };
+		63CB8CB62317E1EF007150C7 /* ProtocolGridScapePathPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CB42317E1EF007150C7 /* ProtocolGridScapePathPoint.swift */; };
+		63CB8CBD2317E1F7007150C7 /* PathAttributesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CB82317E1F6007150C7 /* PathAttributesWrapper.swift */; };
+		63CB8CBE2317E1F7007150C7 /* PathLogWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CB92317E1F6007150C7 /* PathLogWrapper.swift */; };
+		63CB8CBF2317E1F7007150C7 /* PathWrapperBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CBA2317E1F6007150C7 /* PathWrapperBase.swift */; };
+		63CB8CC02317E1F7007150C7 /* ProtocolGridScapePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CBC2317E1F6007150C7 /* ProtocolGridScapePath.swift */; };
+		63CB8CC6231A9336007150C7 /* ProcessMovePathPointWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB8CC5231A9336007150C7 /* ProcessMovePathPointWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		636BD2BE21FB524500A38AC7 /* GridScapeDeckDraggingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScapeDeckDraggingState.swift; sourceTree = "<group>"; };
+		636BD31A22008ABC00A38AC7 /* CellWrapperBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWrapperBase.swift; sourceTree = "<group>"; };
+		636BD33322008D7600A38AC7 /* SFModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636BD34722009A2200A38AC7 /* TileWrapperBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileWrapperBase.swift; sourceTree = "<group>"; };
+		636BD34922009AB500A38AC7 /* ModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProperties.swift; sourceTree = "<group>"; };
+		636BD34E22009B2500A38AC7 /* SFCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636BD35022009B2A00A38AC7 /* SFSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636BD4472203475100A38AC7 /* GridScapeContainerViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeContainerViewControlManager.swift; sourceTree = "<group>"; };
+		636BD4492203475100A38AC7 /* ProtocolGridScapeContainerViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeContainerViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		636BD44D2203475D00A38AC7 /* GridScapeContainerViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeContainerViewViewManager.swift; sourceTree = "<group>"; };
+		636BD44F2203475D00A38AC7 /* GridScapeContainerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeContainerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636BD4512203475D00A38AC7 /* ProtocolGridScapeContainerViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeContainerViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636BD4532203475D00A38AC7 /* ProtocolGridScapeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeContainerView.swift; sourceTree = "<group>"; };
+		636BD52C220C622900A38AC7 /* ProtocolGridScapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeCell.swift; sourceTree = "<group>"; };
+		636D8E2021A31233005AE0A8 /* SFGridScape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFGridScape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636D8E2321A31233005AE0A8 /* SFGridScape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFGridScape.h; sourceTree = "<group>"; };
+		636D8E2421A31233005AE0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636D8E5821A42691005AE0A8 /* GridScapeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScapeManager.swift; sourceTree = "<group>"; };
+		636D8E5A21A426A2005AE0A8 /* ProtocolGridScapeManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeManagerDelegate.swift; sourceTree = "<group>"; };
+		636D8E7E21A42D0F005AE0A8 /* CellCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCoord.swift; sourceTree = "<group>"; };
+		636D8E7F21A42D0F005AE0A8 /* CellCoordRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCoordRange.swift; sourceTree = "<group>"; };
+		636D8E8021A42D0F005AE0A8 /* BlockCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockCoord.swift; sourceTree = "<group>"; };
+		636D8E8421A42E60005AE0A8 /* GridBlockViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBlockViewViewManager.swift; sourceTree = "<group>"; };
+		636D8E8621A42E60005AE0A8 /* ProtocolGridBlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridBlockView.swift; sourceTree = "<group>"; };
+		636D8E8821A42E60005AE0A8 /* GridBlockViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBlockViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8E8A21A42E60005AE0A8 /* ProtocolGridBlockViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridBlockViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8E9C21A42F94005AE0A8 /* GridCellViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8E9E21A42F94005AE0A8 /* ProtocolGridCellViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridCellViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8E9F21A42F94005AE0A8 /* GridCellViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellViewViewManager.swift; sourceTree = "<group>"; };
+		636D8EA121A42F94005AE0A8 /* ProtocolGridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridCellView.swift; sourceTree = "<group>"; };
+		636D8EA721A43037005AE0A8 /* ProtocolGridBlockViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridBlockViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		636D8EA821A43037005AE0A8 /* GridBlockViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBlockViewControlManager.swift; sourceTree = "<group>"; };
+		636D8EAC21A43072005AE0A8 /* GridCellViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellViewControlManager.swift; sourceTree = "<group>"; };
+		636D8EAE21A43072005AE0A8 /* ProtocolGridCellViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridCellViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		636D8EB121A431D5005AE0A8 /* GridBlockProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBlockProperties.swift; sourceTree = "<group>"; };
+		636D8EB221A431D5005AE0A8 /* GridCellProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellProperties.swift; sourceTree = "<group>"; };
+		636D8EB321A431D5005AE0A8 /* GridProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridProperties.swift; sourceTree = "<group>"; };
+		636D8EB421A431D6005AE0A8 /* GridState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridState.swift; sourceTree = "<group>"; };
+		636D8EB921A434DA005AE0A8 /* ProtocolGridBlockViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridBlockViewDelegate.swift; sourceTree = "<group>"; };
+		636D8EBD21A43B82005AE0A8 /* GridBlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBlockView.swift; sourceTree = "<group>"; };
+		636D8EBE21A43B82005AE0A8 /* GridBlockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridBlockView.xib; sourceTree = "<group>"; };
+		636D8EC221A43C66005AE0A8 /* GridCellViewBase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridCellViewBase.xib; sourceTree = "<group>"; };
+		636D8EC321A43C66005AE0A8 /* GridCellViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellViewBase.swift; sourceTree = "<group>"; };
+		636D8EC521A43C66005AE0A8 /* ProtocolGridCellViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridCellViewDelegate.swift; sourceTree = "<group>"; };
+		636D8ECD21A4A620005AE0A8 /* GridScapeViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8ECF21A4A620005AE0A8 /* ProtocolGridScapeViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8ED021A4A620005AE0A8 /* GridScapeViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeViewViewManager.swift; sourceTree = "<group>"; };
+		636D8ED221A4A620005AE0A8 /* ProtocolGridScapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeView.swift; sourceTree = "<group>"; };
+		636D8ED821A4A69E005AE0A8 /* GridScapeViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeViewControlManager.swift; sourceTree = "<group>"; };
+		636D8EDA21A4A69E005AE0A8 /* ProtocolGridScapeViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		636D8EDE21A4A710005AE0A8 /* GridScapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScapeView.swift; sourceTree = "<group>"; };
+		636D8EDF21A4A710005AE0A8 /* GridScapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridScapeView.xib; sourceTree = "<group>"; };
+		636D8EE121A4A710005AE0A8 /* ProtocolGridScapeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeViewDelegate.swift; sourceTree = "<group>"; };
+		636D8EEF21A5774C005AE0A8 /* GridScapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScapeHelper.swift; sourceTree = "<group>"; };
+		636D8EF321A579FC005AE0A8 /* SFView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636D8EF521A57A0F005AE0A8 /* SFGlobalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFGlobalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636D8F2721A8064D005AE0A8 /* GridScrollState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScrollState.swift; sourceTree = "<group>"; };
+		636D8F4021A99871005AE0A8 /* GridBuildProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBuildProperties.swift; sourceTree = "<group>"; };
+		636D8F6B21AD509B005AE0A8 /* GridCellNeighbour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellNeighbour.swift; sourceTree = "<group>"; };
+		636D8F6D21AD50F4005AE0A8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		636D8F8121B3EF7C005AE0A8 /* GridTileViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTileViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8F8321B3EF7C005AE0A8 /* ProtocolGridTileViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTileViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		636D8F8421B3EF7C005AE0A8 /* GridTileViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTileViewViewManager.swift; sourceTree = "<group>"; };
+		636D8F8621B3EF7C005AE0A8 /* ProtocolGridTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTileView.swift; sourceTree = "<group>"; };
+		636D8F8B21B3EFF4005AE0A8 /* GridTileProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTileProperties.swift; sourceTree = "<group>"; };
+		636D8F8E21B3F0D0005AE0A8 /* GridTileViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTileViewControlManager.swift; sourceTree = "<group>"; };
+		636D8F9021B3F0D0005AE0A8 /* ProtocolGridTileViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTileViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		636D8F9421B3F124005AE0A8 /* GridTileViewBase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridTileViewBase.xib; sourceTree = "<group>"; };
+		636D8F9521B3F124005AE0A8 /* GridTileViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTileViewBase.swift; sourceTree = "<group>"; };
+		636D8F9721B3F124005AE0A8 /* ProtocolGridTileViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTileViewDelegate.swift; sourceTree = "<group>"; };
+		6374CB1021ECD0F700530045 /* SFController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E14C7227DD18B00ED2539 /* TokenWrapperBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenWrapperBase.swift; sourceTree = "<group>"; };
+		637E14C8227DD18B00ED2539 /* TokenAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAttributesWrapper.swift; sourceTree = "<group>"; };
+		637E14CA227DD18B00ED2539 /* ProtocolGridScapeToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeToken.swift; sourceTree = "<group>"; };
+		637E14DC227DEFC100ED2539 /* GridTokenProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTokenProperties.swift; sourceTree = "<group>"; };
+		637E14E0227DF06E00ED2539 /* GridTokenViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTokenViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		637E14E2227DF06E00ED2539 /* ProtocolGridTokenViewViewAccessStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTokenViewViewAccessStrategy.swift; sourceTree = "<group>"; };
+		637E14E3227DF06E00ED2539 /* GridTokenViewViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTokenViewViewManager.swift; sourceTree = "<group>"; };
+		637E14E5227DF06E00ED2539 /* ProtocolGridTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTokenView.swift; sourceTree = "<group>"; };
+		637E14EB227DF13E00ED2539 /* GridTokenViewBase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridTokenViewBase.xib; sourceTree = "<group>"; };
+		637E14EC227DF13E00ED2539 /* GridTokenViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTokenViewBase.swift; sourceTree = "<group>"; };
+		637E14EE227DF13E00ED2539 /* ProtocolGridTokenViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTokenViewDelegate.swift; sourceTree = "<group>"; };
+		637E14F3227DF2D200ED2539 /* GridTokenViewControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTokenViewControlManager.swift; sourceTree = "<group>"; };
+		637E14F5227DF2D200ED2539 /* ProtocolGridTokenViewControlManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridTokenViewControlManagerDelegate.swift; sourceTree = "<group>"; };
+		63816465224D351200718A4B /* ProtocolGridScapeTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapeTile.swift; sourceTree = "<group>"; };
+		63816467224D352500718A4B /* TileAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileAttributesWrapper.swift; sourceTree = "<group>"; };
+		63816468224D352600718A4B /* TileSideAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileSideAttributesWrapper.swift; sourceTree = "<group>"; };
+		6381646C224D363300718A4B /* TileTypeWrapperBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileTypeWrapperBase.swift; sourceTree = "<group>"; };
+		63AB9E482227EF1D00E7125A /* CellSideAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSideAttributesWrapper.swift; sourceTree = "<group>"; };
+		63AB9E4A2227EF2500E7125A /* CellAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAttributesWrapper.swift; sourceTree = "<group>"; };
+		63AB9E86222B01BD00E7125A /* CellTypeWrapperBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTypeWrapperBase.swift; sourceTree = "<group>"; };
+		63AB9E89222C647C00E7125A /* SFGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SFGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C3605621BEB9C1002FA76C /* GridBlockState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBlockState.swift; sourceTree = "<group>"; };
+		63C3606E21C3F4CB002FA76C /* GridCellAttributesIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellAttributesIndex.swift; sourceTree = "<group>"; };
+		63C3607021C40168002FA76C /* CellPropertyChangedWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPropertyChangedWrapper.swift; sourceTree = "<group>"; };
+		63C3607221C7D1BC002FA76C /* GridDraggingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDraggingState.swift; sourceTree = "<group>"; };
+		63C3607421CE4248002FA76C /* CellCoordVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCoordVector.swift; sourceTree = "<group>"; };
+		63CB8CB22317E1EF007150C7 /* PathPointWrapperBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathPointWrapperBase.swift; sourceTree = "<group>"; };
+		63CB8CB42317E1EF007150C7 /* ProtocolGridScapePathPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapePathPoint.swift; sourceTree = "<group>"; };
+		63CB8CB82317E1F6007150C7 /* PathAttributesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathAttributesWrapper.swift; sourceTree = "<group>"; };
+		63CB8CB92317E1F6007150C7 /* PathLogWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathLogWrapper.swift; sourceTree = "<group>"; };
+		63CB8CBA2317E1F6007150C7 /* PathWrapperBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathWrapperBase.swift; sourceTree = "<group>"; };
+		63CB8CBC2317E1F6007150C7 /* ProtocolGridScapePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGridScapePath.swift; sourceTree = "<group>"; };
+		63CB8CC5231A9336007150C7 /* ProcessMovePathPointWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessMovePathPointWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		636D8E1C21A31233005AE0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6374CB0F21ECD0F700530045 /* SFController.framework in Frameworks */,
+				636BD34F22009B2A00A38AC7 /* SFSerialization.framework in Frameworks */,
+				63AB9E88222C647C00E7125A /* SFGraphics.framework in Frameworks */,
+				636BD34D22009B2500A38AC7 /* SFCore.framework in Frameworks */,
+				636BD33222008D7600A38AC7 /* SFModel.framework in Frameworks */,
+				636D8EF221A579FC005AE0A8 /* SFView.framework in Frameworks */,
+				636D8EF421A57A0F005AE0A8 /* SFGlobalization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		636BD2BD21FB522D00A38AC7 /* GridScapeDeckView */ = {
+			isa = PBXGroup;
+			children = (
+				636BD2BE21FB524500A38AC7 /* GridScapeDeckDraggingState.swift */,
+			);
+			path = GridScapeDeckView;
+			sourceTree = "<group>";
+		};
+		636BD31922008AA700A38AC7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				636BD52B220C620700A38AC7 /* Protocols */,
+				636BD31A22008ABC00A38AC7 /* CellWrapperBase.swift */,
+				63AB9E4A2227EF2500E7125A /* CellAttributesWrapper.swift */,
+				63AB9E482227EF1D00E7125A /* CellSideAttributesWrapper.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		636BD34622009A1300A38AC7 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				63816464224D351200718A4B /* Protocols */,
+				636BD34722009A2200A38AC7 /* TileWrapperBase.swift */,
+				63816467224D352500718A4B /* TileAttributesWrapper.swift */,
+				63816468224D352600718A4B /* TileSideAttributesWrapper.swift */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		636BD4462203475100A38AC7 /* GridScapeContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4482203475100A38AC7 /* Protocols */,
+				636BD4472203475100A38AC7 /* GridScapeContainerViewControlManager.swift */,
+			);
+			path = GridScapeContainerView;
+			sourceTree = "<group>";
+		};
+		636BD4482203475100A38AC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4492203475100A38AC7 /* ProtocolGridScapeContainerViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636BD44C2203475D00A38AC7 /* GridScapeContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4522203475D00A38AC7 /* Protocols */,
+				636BD44E2203475D00A38AC7 /* ViewAccessStrategies */,
+				636BD44D2203475D00A38AC7 /* GridScapeContainerViewViewManager.swift */,
+			);
+			path = GridScapeContainerView;
+			sourceTree = "<group>";
+		};
+		636BD44E2203475D00A38AC7 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4502203475D00A38AC7 /* Protocols */,
+				636BD44F2203475D00A38AC7 /* GridScapeContainerViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		636BD4502203475D00A38AC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4512203475D00A38AC7 /* ProtocolGridScapeContainerViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636BD4522203475D00A38AC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4532203475D00A38AC7 /* ProtocolGridScapeContainerView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636BD52B220C620700A38AC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636BD52C220C622900A38AC7 /* ProtocolGridScapeCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8E1621A31233005AE0A8 = {
+			isa = PBXGroup;
+			children = (
+				636D8E2221A31233005AE0A8 /* SFGridScape */,
+				636D8E2121A31233005AE0A8 /* Products */,
+				636D8EF121A579FC005AE0A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		636D8E2121A31233005AE0A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E2021A31233005AE0A8 /* SFGridScape.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		636D8E2221A31233005AE0A8 /* SFGridScape */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E6F21A4285D005AE0A8 /* Core */,
+				636D8E6C21A42822005AE0A8 /* Model */,
+				636D8E6D21A42827005AE0A8 /* View */,
+				636D8E6B21A4281A005AE0A8 /* Controller */,
+				636D8E5521A4265F005AE0A8 /* GridScapeManager */,
+				636D8E7721A42A56005AE0A8 /* Views */,
+				636D8E2321A31233005AE0A8 /* SFGridScape.h */,
+				636D8E2421A31233005AE0A8 /* Info.plist */,
+			);
+			path = SFGridScape;
+			sourceTree = "<group>";
+		};
+		636D8E5521A4265F005AE0A8 /* GridScapeManager */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E5721A42673005AE0A8 /* Protocols */,
+				636D8E5821A42691005AE0A8 /* GridScapeManager.swift */,
+			);
+			path = GridScapeManager;
+			sourceTree = "<group>";
+		};
+		636D8E5721A42673005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E5A21A426A2005AE0A8 /* ProtocolGridScapeManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8E6B21A4281A005AE0A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E6E21A42831005AE0A8 /* Views */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		636D8E6C21A42822005AE0A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				636BD34622009A1300A38AC7 /* Tiles */,
+				6381646B224D363300718A4B /* TileTypes */,
+				637E14C6227DD18B00ED2539 /* Tokens */,
+				636BD31922008AA700A38AC7 /* Cells */,
+				63AB9E85222AFE2C00E7125A /* CellTypes */,
+				63CB8CB72317E1F6007150C7 /* Paths */,
+				63CB8CB12317E1EF007150C7 /* PathPoints */,
+				636BD34922009AB500A38AC7 /* ModelProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		636D8E6D21A42827005AE0A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E7221A42893005AE0A8 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		636D8E6E21A42831005AE0A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				636BD4462203475100A38AC7 /* GridScapeContainerView */,
+				636D8ED721A4A69E005AE0A8 /* GridScapeView */,
+				636D8E7121A42887005AE0A8 /* GridBlockView */,
+				636D8EAB21A43072005AE0A8 /* GridCellView */,
+				636D8F8D21B3F0D0005AE0A8 /* GridTileView */,
+				637E14F2227DF2D200ED2539 /* GridTokenView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		636D8E6F21A4285D005AE0A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EB121A431D5005AE0A8 /* GridBlockProperties.swift */,
+				636D8EB221A431D5005AE0A8 /* GridCellProperties.swift */,
+				636D8F8B21B3EFF4005AE0A8 /* GridTileProperties.swift */,
+				637E14DC227DEFC100ED2539 /* GridTokenProperties.swift */,
+				636D8EB321A431D5005AE0A8 /* GridProperties.swift */,
+				636D8EB421A431D6005AE0A8 /* GridState.swift */,
+				63C3605621BEB9C1002FA76C /* GridBlockState.swift */,
+				636D8E8021A42D0F005AE0A8 /* BlockCoord.swift */,
+				636D8E7E21A42D0F005AE0A8 /* CellCoord.swift */,
+				636D8E7F21A42D0F005AE0A8 /* CellCoordRange.swift */,
+				636D8EEF21A5774C005AE0A8 /* GridScapeHelper.swift */,
+				636D8F2721A8064D005AE0A8 /* GridScrollState.swift */,
+				636D8F4021A99871005AE0A8 /* GridBuildProperties.swift */,
+				636D8F6B21AD509B005AE0A8 /* GridCellNeighbour.swift */,
+				636D8F6D21AD50F4005AE0A8 /* Enums.swift */,
+				63C3606E21C3F4CB002FA76C /* GridCellAttributesIndex.swift */,
+				63C3607021C40168002FA76C /* CellPropertyChangedWrapper.swift */,
+				63CB8CC5231A9336007150C7 /* ProcessMovePathPointWrapper.swift */,
+				63C3607221C7D1BC002FA76C /* GridDraggingState.swift */,
+				63C3607421CE4248002FA76C /* CellCoordVector.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		636D8E7121A42887005AE0A8 /* GridBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EA621A43037005AE0A8 /* Protocols */,
+				636D8EA821A43037005AE0A8 /* GridBlockViewControlManager.swift */,
+			);
+			path = GridBlockView;
+			sourceTree = "<group>";
+		};
+		636D8E7221A42893005AE0A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				636BD44C2203475D00A38AC7 /* GridScapeContainerView */,
+				636BD2BD21FB522D00A38AC7 /* GridScapeDeckView */,
+				636D8ECB21A4A620005AE0A8 /* GridScapeView */,
+				636D8E7421A428A0005AE0A8 /* GridBlockView */,
+				636D8E9A21A42F94005AE0A8 /* GridCellView */,
+				636D8F7F21B3EF7B005AE0A8 /* GridTileView */,
+				637E14DE227DF06E00ED2539 /* GridTokenView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		636D8E7421A428A0005AE0A8 /* GridBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E8521A42E60005AE0A8 /* Protocols */,
+				636D8E8721A42E60005AE0A8 /* ViewAccessStrategies */,
+				636D8E8421A42E60005AE0A8 /* GridBlockViewViewManager.swift */,
+			);
+			path = GridBlockView;
+			sourceTree = "<group>";
+		};
+		636D8E7721A42A56005AE0A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EDD21A4A710005AE0A8 /* GridScapeView */,
+				636D8E7921A42A75005AE0A8 /* GridBlockView */,
+				636D8EC121A43C66005AE0A8 /* GridCellView */,
+				636D8F9321B3F124005AE0A8 /* GridTileView */,
+				637E14EA227DF13E00ED2539 /* GridTokenView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		636D8E7921A42A75005AE0A8 /* GridBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E7C21A42A95005AE0A8 /* Protocols */,
+				636D8EBE21A43B82005AE0A8 /* GridBlockView.xib */,
+				636D8EBD21A43B82005AE0A8 /* GridBlockView.swift */,
+			);
+			path = GridBlockView;
+			sourceTree = "<group>";
+		};
+		636D8E7C21A42A95005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EB921A434DA005AE0A8 /* ProtocolGridBlockViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8E8521A42E60005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E8621A42E60005AE0A8 /* ProtocolGridBlockView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8E8721A42E60005AE0A8 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E8921A42E60005AE0A8 /* Protocols */,
+				636D8E8821A42E60005AE0A8 /* GridBlockViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		636D8E8921A42E60005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E8A21A42E60005AE0A8 /* ProtocolGridBlockViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8E9A21A42F94005AE0A8 /* GridCellView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EA021A42F94005AE0A8 /* Protocols */,
+				636D8E9B21A42F94005AE0A8 /* ViewAccessStrategies */,
+				636D8E9F21A42F94005AE0A8 /* GridCellViewViewManager.swift */,
+			);
+			path = GridCellView;
+			sourceTree = "<group>";
+		};
+		636D8E9B21A42F94005AE0A8 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E9D21A42F94005AE0A8 /* Protocols */,
+				636D8E9C21A42F94005AE0A8 /* GridCellViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		636D8E9D21A42F94005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8E9E21A42F94005AE0A8 /* ProtocolGridCellViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EA021A42F94005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EA121A42F94005AE0A8 /* ProtocolGridCellView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EA621A43037005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EA721A43037005AE0A8 /* ProtocolGridBlockViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EAB21A43072005AE0A8 /* GridCellView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EAD21A43072005AE0A8 /* Protocols */,
+				636D8EAC21A43072005AE0A8 /* GridCellViewControlManager.swift */,
+			);
+			path = GridCellView;
+			sourceTree = "<group>";
+		};
+		636D8EAD21A43072005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EAE21A43072005AE0A8 /* ProtocolGridCellViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EC121A43C66005AE0A8 /* GridCellView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EC421A43C66005AE0A8 /* Protocols */,
+				636D8EC221A43C66005AE0A8 /* GridCellViewBase.xib */,
+				636D8EC321A43C66005AE0A8 /* GridCellViewBase.swift */,
+			);
+			path = GridCellView;
+			sourceTree = "<group>";
+		};
+		636D8EC421A43C66005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EC521A43C66005AE0A8 /* ProtocolGridCellViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8ECB21A4A620005AE0A8 /* GridScapeView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8ED121A4A620005AE0A8 /* Protocols */,
+				636D8ECC21A4A620005AE0A8 /* ViewAccessStrategies */,
+				636D8ED021A4A620005AE0A8 /* GridScapeViewViewManager.swift */,
+			);
+			path = GridScapeView;
+			sourceTree = "<group>";
+		};
+		636D8ECC21A4A620005AE0A8 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				636D8ECE21A4A620005AE0A8 /* Protocols */,
+				636D8ECD21A4A620005AE0A8 /* GridScapeViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		636D8ECE21A4A620005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8ECF21A4A620005AE0A8 /* ProtocolGridScapeViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8ED121A4A620005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8ED221A4A620005AE0A8 /* ProtocolGridScapeView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8ED721A4A69E005AE0A8 /* GridScapeView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8ED921A4A69E005AE0A8 /* Protocols */,
+				636D8ED821A4A69E005AE0A8 /* GridScapeViewControlManager.swift */,
+			);
+			path = GridScapeView;
+			sourceTree = "<group>";
+		};
+		636D8ED921A4A69E005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EDA21A4A69E005AE0A8 /* ProtocolGridScapeViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EDD21A4A710005AE0A8 /* GridScapeView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EE021A4A710005AE0A8 /* Protocols */,
+				636D8EDF21A4A710005AE0A8 /* GridScapeView.xib */,
+				636D8EDE21A4A710005AE0A8 /* GridScapeView.swift */,
+			);
+			path = GridScapeView;
+			sourceTree = "<group>";
+		};
+		636D8EE021A4A710005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EE121A4A710005AE0A8 /* ProtocolGridScapeViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8EF121A579FC005AE0A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636D8EF321A579FC005AE0A8 /* SFView.framework */,
+				636BD34E22009B2500A38AC7 /* SFCore.framework */,
+				63AB9E89222C647C00E7125A /* SFGraphics.framework */,
+				636BD35022009B2A00A38AC7 /* SFSerialization.framework */,
+				636BD33322008D7600A38AC7 /* SFModel.framework */,
+				6374CB1021ECD0F700530045 /* SFController.framework */,
+				636D8EF521A57A0F005AE0A8 /* SFGlobalization.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		636D8F7F21B3EF7B005AE0A8 /* GridTileView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F8521B3EF7C005AE0A8 /* Protocols */,
+				636D8F8021B3EF7B005AE0A8 /* ViewAccessStrategies */,
+				636D8F8421B3EF7C005AE0A8 /* GridTileViewViewManager.swift */,
+			);
+			path = GridTileView;
+			sourceTree = "<group>";
+		};
+		636D8F8021B3EF7B005AE0A8 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F8221B3EF7C005AE0A8 /* Protocols */,
+				636D8F8121B3EF7C005AE0A8 /* GridTileViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		636D8F8221B3EF7C005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F8321B3EF7C005AE0A8 /* ProtocolGridTileViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8F8521B3EF7C005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F8621B3EF7C005AE0A8 /* ProtocolGridTileView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8F8D21B3F0D0005AE0A8 /* GridTileView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F8F21B3F0D0005AE0A8 /* Protocols */,
+				636D8F8E21B3F0D0005AE0A8 /* GridTileViewControlManager.swift */,
+			);
+			path = GridTileView;
+			sourceTree = "<group>";
+		};
+		636D8F8F21B3F0D0005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F9021B3F0D0005AE0A8 /* ProtocolGridTileViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		636D8F9321B3F124005AE0A8 /* GridTileView */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F9621B3F124005AE0A8 /* Protocols */,
+				636D8F9421B3F124005AE0A8 /* GridTileViewBase.xib */,
+				636D8F9521B3F124005AE0A8 /* GridTileViewBase.swift */,
+			);
+			path = GridTileView;
+			sourceTree = "<group>";
+		};
+		636D8F9621B3F124005AE0A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				636D8F9721B3F124005AE0A8 /* ProtocolGridTileViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637E14C6227DD18B00ED2539 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				637E14C9227DD18B00ED2539 /* Protocols */,
+				637E14C7227DD18B00ED2539 /* TokenWrapperBase.swift */,
+				637E14C8227DD18B00ED2539 /* TokenAttributesWrapper.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		637E14C9227DD18B00ED2539 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				637E14CA227DD18B00ED2539 /* ProtocolGridScapeToken.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637E14DE227DF06E00ED2539 /* GridTokenView */ = {
+			isa = PBXGroup;
+			children = (
+				637E14E4227DF06E00ED2539 /* Protocols */,
+				637E14DF227DF06E00ED2539 /* ViewAccessStrategies */,
+				637E14E3227DF06E00ED2539 /* GridTokenViewViewManager.swift */,
+			);
+			path = GridTokenView;
+			sourceTree = "<group>";
+		};
+		637E14DF227DF06E00ED2539 /* ViewAccessStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				637E14E1227DF06E00ED2539 /* Protocols */,
+				637E14E0227DF06E00ED2539 /* GridTokenViewViewAccessStrategy.swift */,
+			);
+			path = ViewAccessStrategies;
+			sourceTree = "<group>";
+		};
+		637E14E1227DF06E00ED2539 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				637E14E2227DF06E00ED2539 /* ProtocolGridTokenViewViewAccessStrategy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637E14E4227DF06E00ED2539 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				637E14E5227DF06E00ED2539 /* ProtocolGridTokenView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637E14EA227DF13E00ED2539 /* GridTokenView */ = {
+			isa = PBXGroup;
+			children = (
+				637E14ED227DF13E00ED2539 /* Protocols */,
+				637E14EB227DF13E00ED2539 /* GridTokenViewBase.xib */,
+				637E14EC227DF13E00ED2539 /* GridTokenViewBase.swift */,
+			);
+			path = GridTokenView;
+			sourceTree = "<group>";
+		};
+		637E14ED227DF13E00ED2539 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				637E14EE227DF13E00ED2539 /* ProtocolGridTokenViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637E14F2227DF2D200ED2539 /* GridTokenView */ = {
+			isa = PBXGroup;
+			children = (
+				637E14F4227DF2D200ED2539 /* Protocols */,
+				637E14F3227DF2D200ED2539 /* GridTokenViewControlManager.swift */,
+			);
+			name = GridTokenView;
+			path = SFGridScape/Controller/Views/GridTokenView;
+			sourceTree = SOURCE_ROOT;
+		};
+		637E14F4227DF2D200ED2539 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				637E14F5227DF2D200ED2539 /* ProtocolGridTokenViewControlManagerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		63816464224D351200718A4B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63816465224D351200718A4B /* ProtocolGridScapeTile.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6381646B224D363300718A4B /* TileTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6381646C224D363300718A4B /* TileTypeWrapperBase.swift */,
+			);
+			path = TileTypes;
+			sourceTree = "<group>";
+		};
+		63AB9E85222AFE2C00E7125A /* CellTypes */ = {
+			isa = PBXGroup;
+			children = (
+				63AB9E86222B01BD00E7125A /* CellTypeWrapperBase.swift */,
+			);
+			path = CellTypes;
+			sourceTree = "<group>";
+		};
+		63CB8CB12317E1EF007150C7 /* PathPoints */ = {
+			isa = PBXGroup;
+			children = (
+				63CB8CB32317E1EF007150C7 /* Protocols */,
+				63CB8CB22317E1EF007150C7 /* PathPointWrapperBase.swift */,
+			);
+			path = PathPoints;
+			sourceTree = "<group>";
+		};
+		63CB8CB32317E1EF007150C7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63CB8CB42317E1EF007150C7 /* ProtocolGridScapePathPoint.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		63CB8CB72317E1F6007150C7 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				63CB8CBB2317E1F6007150C7 /* Protocols */,
+				63CB8CBA2317E1F6007150C7 /* PathWrapperBase.swift */,
+				63CB8CB82317E1F6007150C7 /* PathAttributesWrapper.swift */,
+				63CB8CB92317E1F6007150C7 /* PathLogWrapper.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		63CB8CBB2317E1F6007150C7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63CB8CBC2317E1F6007150C7 /* ProtocolGridScapePath.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		636D8E1D21A31233005AE0A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636D8E2521A31233005AE0A8 /* SFGridScape.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		636D8E1F21A31233005AE0A8 /* SFGridScape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636D8E2821A31233005AE0A8 /* Build configuration list for PBXNativeTarget "SFGridScape" */;
+			buildPhases = (
+				636D8E1B21A31233005AE0A8 /* Sources */,
+				636D8E1C21A31233005AE0A8 /* Frameworks */,
+				636D8E1D21A31233005AE0A8 /* Headers */,
+				636D8E1E21A31233005AE0A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFGridScape;
+			productName = SFGridScape;
+			productReference = 636D8E2021A31233005AE0A8 /* SFGridScape.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		636D8E1721A31233005AE0A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = David;
+				TargetAttributes = {
+					636D8E1F21A31233005AE0A8 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 636D8E1A21A31233005AE0A8 /* Build configuration list for PBXProject "SFGridScape" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 636D8E1621A31233005AE0A8;
+			productRefGroup = 636D8E2121A31233005AE0A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				636D8E1F21A31233005AE0A8 /* SFGridScape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		636D8E1E21A31233005AE0A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E14EF227DF13E00ED2539 /* GridTokenViewBase.xib in Resources */,
+				636D8EE321A4A710005AE0A8 /* GridScapeView.xib in Resources */,
+				636D8EC021A43B83005AE0A8 /* GridBlockView.xib in Resources */,
+				636D8EC621A43C66005AE0A8 /* GridCellViewBase.xib in Resources */,
+				636D8F9821B3F124005AE0A8 /* GridTileViewBase.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		636D8E1B21A31233005AE0A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636D8EAF21A43072005AE0A8 /* GridCellViewControlManager.swift in Sources */,
+				63CB8CBE2317E1F7007150C7 /* PathLogWrapper.swift in Sources */,
+				636D8E8E21A42E60005AE0A8 /* ProtocolGridBlockViewViewAccessStrategy.swift in Sources */,
+				63AB9E4B2227EF2600E7125A /* CellAttributesWrapper.swift in Sources */,
+				63C3607521CE4249002FA76C /* CellCoordVector.swift in Sources */,
+				63C3607321C7D1BC002FA76C /* GridDraggingState.swift in Sources */,
+				6381646A224D352600718A4B /* TileSideAttributesWrapper.swift in Sources */,
+				637E14F0227DF13E00ED2539 /* GridTokenViewBase.swift in Sources */,
+				636BD52D220C622900A38AC7 /* ProtocolGridScapeCell.swift in Sources */,
+				63CB8CBF2317E1F7007150C7 /* PathWrapperBase.swift in Sources */,
+				636D8EDC21A4A69E005AE0A8 /* ProtocolGridScapeViewControlManagerDelegate.swift in Sources */,
+				636D8F9921B3F124005AE0A8 /* GridTileViewBase.swift in Sources */,
+				636D8EB721A431D6005AE0A8 /* GridProperties.swift in Sources */,
+				636D8E5921A42691005AE0A8 /* GridScapeManager.swift in Sources */,
+				636D8F6C21AD509B005AE0A8 /* GridCellNeighbour.swift in Sources */,
+				636D8EB021A43072005AE0A8 /* ProtocolGridCellViewControlManagerDelegate.swift in Sources */,
+				636D8EB621A431D6005AE0A8 /* GridCellProperties.swift in Sources */,
+				636D8E8C21A42E60005AE0A8 /* ProtocolGridBlockView.swift in Sources */,
+				636D8ED321A4A620005AE0A8 /* GridScapeViewViewAccessStrategy.swift in Sources */,
+				636D8EA421A42F94005AE0A8 /* GridCellViewViewManager.swift in Sources */,
+				63C3607121C40168002FA76C /* CellPropertyChangedWrapper.swift in Sources */,
+				636D8EA321A42F94005AE0A8 /* ProtocolGridCellViewViewAccessStrategy.swift in Sources */,
+				63AB9E492227EF1D00E7125A /* CellSideAttributesWrapper.swift in Sources */,
+				637E14F1227DF13E00ED2539 /* ProtocolGridTokenViewDelegate.swift in Sources */,
+				637E14F6227DF2D200ED2539 /* GridTokenViewControlManager.swift in Sources */,
+				636D8EA921A43037005AE0A8 /* ProtocolGridBlockViewControlManagerDelegate.swift in Sources */,
+				63816469224D352600718A4B /* TileAttributesWrapper.swift in Sources */,
+				636BD4572203475D00A38AC7 /* ProtocolGridScapeContainerView.swift in Sources */,
+				636D8EB521A431D6005AE0A8 /* GridBlockProperties.swift in Sources */,
+				637E14E9227DF06E00ED2539 /* ProtocolGridTokenView.swift in Sources */,
+				63CB8CC02317E1F7007150C7 /* ProtocolGridScapePath.swift in Sources */,
+				63CB8CB52317E1EF007150C7 /* PathPointWrapperBase.swift in Sources */,
+				636D8EAA21A43037005AE0A8 /* GridBlockViewControlManager.swift in Sources */,
+				636D8EE421A4A710005AE0A8 /* ProtocolGridScapeViewDelegate.swift in Sources */,
+				63816466224D351200718A4B /* ProtocolGridScapeTile.swift in Sources */,
+				636D8F8C21B3EFF4005AE0A8 /* GridTileProperties.swift in Sources */,
+				636BD4542203475D00A38AC7 /* GridScapeContainerViewViewManager.swift in Sources */,
+				636D8F8821B3EF7C005AE0A8 /* ProtocolGridTileViewViewAccessStrategy.swift in Sources */,
+				636D8EDB21A4A69E005AE0A8 /* GridScapeViewControlManager.swift in Sources */,
+				636D8E5B21A426A2005AE0A8 /* ProtocolGridScapeManagerDelegate.swift in Sources */,
+				637E14CC227DD18B00ED2539 /* TokenAttributesWrapper.swift in Sources */,
+				636D8F9121B3F0D0005AE0A8 /* GridTileViewControlManager.swift in Sources */,
+				636BD44A2203475100A38AC7 /* GridScapeContainerViewControlManager.swift in Sources */,
+				636D8F8921B3EF7C005AE0A8 /* GridTileViewViewManager.swift in Sources */,
+				636BD4562203475D00A38AC7 /* ProtocolGridScapeContainerViewViewAccessStrategy.swift in Sources */,
+				637E14F7227DF2D200ED2539 /* ProtocolGridTokenViewControlManagerDelegate.swift in Sources */,
+				636D8F6E21AD50F4005AE0A8 /* Enums.swift in Sources */,
+				63AB9E87222B01BD00E7125A /* CellTypeWrapperBase.swift in Sources */,
+				636D8EC721A43C66005AE0A8 /* GridCellViewBase.swift in Sources */,
+				637E14E7227DF06E00ED2539 /* ProtocolGridTokenViewViewAccessStrategy.swift in Sources */,
+				63CB8CBD2317E1F7007150C7 /* PathAttributesWrapper.swift in Sources */,
+				636BD2BF21FB524500A38AC7 /* GridScapeDeckDraggingState.swift in Sources */,
+				636D8F9A21B3F124005AE0A8 /* ProtocolGridTileViewDelegate.swift in Sources */,
+				636D8F9221B3F0D0005AE0A8 /* ProtocolGridTileViewControlManagerDelegate.swift in Sources */,
+				63C3606F21C3F4CB002FA76C /* GridCellAttributesIndex.swift in Sources */,
+				636D8EF021A5774C005AE0A8 /* GridScapeHelper.swift in Sources */,
+				636D8F4121A99871005AE0A8 /* GridBuildProperties.swift in Sources */,
+				636BD31B22008ABC00A38AC7 /* CellWrapperBase.swift in Sources */,
+				63CB8CB62317E1EF007150C7 /* ProtocolGridScapePathPoint.swift in Sources */,
+				636D8F8A21B3EF7C005AE0A8 /* ProtocolGridTileView.swift in Sources */,
+				636D8EBA21A434DA005AE0A8 /* ProtocolGridBlockViewDelegate.swift in Sources */,
+				636D8ED521A4A620005AE0A8 /* GridScapeViewViewManager.swift in Sources */,
+				636D8F8721B3EF7C005AE0A8 /* GridTileViewViewAccessStrategy.swift in Sources */,
+				63C3605721BEB9C1002FA76C /* GridBlockState.swift in Sources */,
+				636BD34822009A2200A38AC7 /* TileWrapperBase.swift in Sources */,
+				636D8F2821A8064D005AE0A8 /* GridScrollState.swift in Sources */,
+				637E14DD227DEFC100ED2539 /* GridTokenProperties.swift in Sources */,
+				636BD34A22009AB500A38AC7 /* ModelProperties.swift in Sources */,
+				636D8E8321A42D0F005AE0A8 /* BlockCoord.swift in Sources */,
+				636D8ED421A4A620005AE0A8 /* ProtocolGridScapeViewViewAccessStrategy.swift in Sources */,
+				636BD4552203475D00A38AC7 /* GridScapeContainerViewViewAccessStrategy.swift in Sources */,
+				637E14E8227DF06E00ED2539 /* GridTokenViewViewManager.swift in Sources */,
+				636D8E8D21A42E60005AE0A8 /* GridBlockViewViewAccessStrategy.swift in Sources */,
+				636D8E8121A42D0F005AE0A8 /* CellCoord.swift in Sources */,
+				636BD44B2203475100A38AC7 /* ProtocolGridScapeContainerViewControlManagerDelegate.swift in Sources */,
+				637E14CD227DD18B00ED2539 /* ProtocolGridScapeToken.swift in Sources */,
+				636D8E8221A42D0F005AE0A8 /* CellCoordRange.swift in Sources */,
+				63CB8CC6231A9336007150C7 /* ProcessMovePathPointWrapper.swift in Sources */,
+				636D8EBF21A43B83005AE0A8 /* GridBlockView.swift in Sources */,
+				636D8EA221A42F94005AE0A8 /* GridCellViewViewAccessStrategy.swift in Sources */,
+				636D8E8B21A42E60005AE0A8 /* GridBlockViewViewManager.swift in Sources */,
+				636D8EE221A4A710005AE0A8 /* GridScapeView.swift in Sources */,
+				636D8EB821A431D6005AE0A8 /* GridState.swift in Sources */,
+				636D8EC821A43C66005AE0A8 /* ProtocolGridCellViewDelegate.swift in Sources */,
+				636D8ED621A4A620005AE0A8 /* ProtocolGridScapeView.swift in Sources */,
+				636D8EA521A42F94005AE0A8 /* ProtocolGridCellView.swift in Sources */,
+				637E14E6227DF06E00ED2539 /* GridTokenViewViewAccessStrategy.swift in Sources */,
+				6381646D224D363300718A4B /* TileTypeWrapperBase.swift in Sources */,
+				637E14CB227DD18B00ED2539 /* TokenWrapperBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		636D8E2621A31233005AE0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		636D8E2721A31233005AE0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		636D8E2921A31233005AE0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8LTFFXX42;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFGridScape/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartfoundation.SFGridScape;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		636D8E2A21A31233005AE0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8LTFFXX42;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFGridScape/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartfoundation.SFGridScape;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		636D8E1A21A31233005AE0A8 /* Build configuration list for PBXProject "SFGridScape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636D8E2621A31233005AE0A8 /* Debug */,
+				636D8E2721A31233005AE0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636D8E2821A31233005AE0A8 /* Build configuration list for PBXNativeTarget "SFGridScape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636D8E2921A31233005AE0A8 /* Debug */,
+				636D8E2A21A31233005AE0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 636D8E1721A31233005AE0A8 /* Project object */;
+}

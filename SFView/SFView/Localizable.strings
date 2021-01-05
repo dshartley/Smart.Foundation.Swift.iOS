@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  SFView
+
+  Created by David on 16/11/2017.
+  Copyright © 2017 com.smartfoundation. All rights reserved.
+*/
+
+/* UIAlertHelper */
+"AlertActionTitleOk" 							= "OK";
+"AlertActionTitleCancel" 						= "Cancel";
+
+/* UIImagePickerHelper */
+"UIImagePickerHelperAlertControllerTitle"		= "Select Photo";
+"UIImagePickerHelperCameraAlertActionTitle" 	= "Take Photo";
+"UIImagePickerHelperLibraryAlertActionTitle" 	= "Choose Existing";
+"UIImagePickerHelperCancelAlertActionTitle" 	= "Cancel";
+
